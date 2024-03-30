@@ -1,5 +1,15 @@
+[![MasterHead](https://www.digitalsolutionservices.com/img/services/web%20development.gif)](https://github.com/hemantkumar980)
+<h1 align="center">Hi 👋, I'm HEMANT KUMAR</h1>
+<h3 align="center">A passionate moblie developer from India</h3>
+<img align="right" alt="Coding" width="400" src="https://cutt.ly/XN4CUFE" />
+
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=hemantkumar980&label=Profile%20views&color=0e75b6&style=flat" alt="hemantkumar980" /> </p>
+
+<p align="left"> <a href="https://twitter.com/hemantkumar980" target="blank"><img src="https://img.shields.io/twitter/follow/hemantkumar980?logo=twitter&style=for-the-badge" alt="hemantkumar980" /></a> </p>
+
+
 # 💫 About Me:
-⦿ 🔭 I’m currently working on **LARAVEL FRAMEWORK**<br><br> ⦿ 🌱 I’m currently learning **backend**<br><br> ⦿ 💬 Ask me about **html,css,javascript,bootstrap,PHP**<br><br> ⦿ 📫 How to reach me **rajpoothemant980@gmail.com**<br><br> ⦿ ⚡ Fun fact **I am funny**
+⦿ 🔭 I’m currently working on **LARAVEL FRAMEWORK**<br><br> ⦿ 🌱 I’m currently learning **backend**<br><br> ⦿ 💬 Ask me about **html,css,javascript,bootstrap,PHP**<br><br> ⦿ 📫 How to reach me **chauhan.tarun897@gmail.com**<br><br> ⦿ ⚡ Fun fact **I am funny**
 
 
 ## Get in Touch
