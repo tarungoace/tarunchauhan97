@@ -8,7 +8,7 @@ class MySkills extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screen = Screen.of(context);
+    final screen = WebsiteScreen.of(context);
 
     Widget skills = const Skills();
     Widget languageSkills = const LanguageSkills();

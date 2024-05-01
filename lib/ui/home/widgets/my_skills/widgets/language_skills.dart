@@ -58,7 +58,7 @@ class LanguageSkill extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final screen = Screen.of(context);
+    final screen = WebsiteScreen.of(context);
 
     return PhysicalModel(
       color: theme.colorScheme.surface,

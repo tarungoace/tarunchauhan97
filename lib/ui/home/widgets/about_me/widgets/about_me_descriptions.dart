@@ -15,7 +15,7 @@ class AboutMeDescriptions extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final screen = Screen.of(context);
+    final screen = WebsiteScreen.of(context);
     final localization = AppLocalizations.of(context)!;
     final theme = Theme.of(context);
 

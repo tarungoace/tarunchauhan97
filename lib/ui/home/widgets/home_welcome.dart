@@ -26,7 +26,7 @@ class HomeWelcome extends ConsumerWidget {
       child: Builder(
         builder: (context) {
           final theme = Theme.of(context);
-          final screen = Screen.of(context);
+          final screen = WebsiteScreen.of(context);
           final localization = AppLocalizations.of(context)!;
 
           return Container(
@@ -72,7 +72,7 @@ class HomeWelcome extends ConsumerWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 40),
                   Text(
                     localization.homeJobTitle,
                     style: screen.fromMTD(

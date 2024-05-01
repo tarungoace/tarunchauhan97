@@ -22,7 +22,7 @@ class PersonalWebsiteApp extends ConsumerWidget {
       supportedLocales: kSupportedLocales,
       locale: currentLocale,
       builder: (context, child) {
-        return Screen(
+        return WebsiteScreen(
           mediaQueryData: MediaQuery.of(context),
           child: child!,
         );

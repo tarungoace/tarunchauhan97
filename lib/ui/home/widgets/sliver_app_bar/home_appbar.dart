@@ -11,7 +11,7 @@ class HomeAppBar extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final screen = Screen.of(context);
+    final screen = WebsiteScreen.of(context);
     final theme = Theme.of(context);
 
     final animation = useState(0.0);

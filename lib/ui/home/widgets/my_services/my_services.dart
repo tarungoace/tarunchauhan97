@@ -9,7 +9,7 @@ class MyServices extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screen = Screen.of(context);
+    final screen = WebsiteScreen.of(context);
     final localization = AppLocalizations.of(context)!;
 
     final isSmallScreen = screen.width <= kMinLargeTabletWidth;

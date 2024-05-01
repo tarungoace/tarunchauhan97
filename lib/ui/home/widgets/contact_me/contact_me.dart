@@ -10,7 +10,7 @@ class ContactMe extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screen = Screen.of(context);
+    final screen = WebsiteScreen.of(context);
 
     final isSmallScreen = screen.type.isMobile || screen.type.isTablet;
 

@@ -31,7 +31,7 @@ class CustomElevatedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screen = Screen.of(context);
+    final screen = WebsiteScreen.of(context);
     final theme = Theme.of(context);
 
     final borderRadius = this.borderRadius ?? BorderRadius.circular(10);

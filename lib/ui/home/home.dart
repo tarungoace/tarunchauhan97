@@ -18,7 +18,7 @@ class HomeScreen extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final screen = Screen.of(context);
+    final screen = WebsiteScreen.of(context);
     final isSmallScreen = !screen.type.isDesktop;
     final drawer = isSmallScreen ? const HomeDrawer() : null;
     final isKeyboardClose = MediaQuery.viewInsetsOf(context).bottom == 0.0;
@@ -41,7 +41,7 @@ class HomeSliverListContent extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final screen = Screen.of(context);
+    final screen = WebsiteScreen.of(context);
 
     // I didn't use ListView or SliverList because of lag and performance issue
     return SingleChildScrollView(

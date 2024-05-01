@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:personal_website/common/responsive/src/screen_data.dart';
 import 'package:personal_website/common/responsive/src/screen_type.dart';
 
-class Screen extends InheritedWidget {
-  Screen({
+class WebsiteScreen extends InheritedWidget {
+  WebsiteScreen({
     super.key,
     required super.child,
     required MediaQueryData mediaQueryData,
@@ -14,11 +14,11 @@ class Screen extends InheritedWidget {
 
   final ScreenData screenData;
   @override
-  bool updateShouldNotify(covariant Screen oldWidget) {
+  bool updateShouldNotify(covariant WebsiteScreen oldWidget) {
     return oldWidget.screenData != screenData;
   }
 
   static ScreenData of(BuildContext context) {
-    return context.dependOnInheritedWidgetOfExactType<Screen>()!.screenData;
+    return context.dependOnInheritedWidgetOfExactType<WebsiteScreen>()!.screenData;
   }
 }

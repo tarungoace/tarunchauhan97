@@ -17,7 +17,7 @@ class SendMessage extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final localization = AppLocalizations.of(context)!;
     final theme = Theme.of(context);
-    final screen = Screen.of(context);
+    final screen = WebsiteScreen.of(context);
 
     final formKey = useMemoized(() => GlobalKey<FormState>());
 

@@ -10,7 +10,7 @@ class MyAvatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screen = Screen.of(context);
+    final screen = WebsiteScreen.of(context);
 
     return SizedBox.square(
       dimension: screen.fromMTD(200, 250, 300),
