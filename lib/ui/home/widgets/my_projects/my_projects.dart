@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:personal_website/common/responsive/responsive.dart';
 import 'package:personal_website/common/responsive/src/constants.dart';
 import 'package:personal_website/common/responsive/src/extensions.dart';
 import 'package:personal_website/common/responsive/src/screen.dart';
@@ -49,14 +50,44 @@ class LargeScreenLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const IntrinsicHeight(
-      child: Row(
+    return IntrinsicHeight(
+      child: Column(
         children: [
-          Expanded(
-            child: MyProjectsCard(),
+          Row(
+            children: [
+              Expanded(
+                child: MyProjectsCard(
+                  title: projectsList[0].titleProject,
+                  githubLink: projectsList[0].githubLink,
+                  image: projectsList[0].imageAsset,
+                ),
+              ),
+              Expanded(
+                child: MyProjectsCard(
+                  title: projectsList[1].titleProject,
+                  githubLink: projectsList[1].githubLink,
+                  image: projectsList[1].imageAsset,
+                ),
+              ),
+            ],
           ),
-          Expanded(
-            child: MyProjectsCard(),
+          Row(
+            children: [
+              Expanded(
+                child: MyProjectsCard(
+                  title: projectsList[2].titleProject,
+                  githubLink: projectsList[2].githubLink,
+                  image: projectsList[2].imageAsset,
+                ),
+              ),
+              Expanded(
+                child: MyProjectsCard(
+                  title: projectsList[3].titleProject,
+                  githubLink: projectsList[3].githubLink,
+                  image: projectsList[3].imageAsset,
+                ),
+              ),
+            ],
           ),
         ],
       ),
@@ -71,12 +102,14 @@ class SmallScreenLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        MyProjectsCard(),
-        MyProjectsCard(),
-        MyProjectsCard(),
-      ],
+    return Column(
+      children: List.generate(projectsList.length, (index) {
+        return MyProjectsCard(
+          title: projectsList[index].titleProject,
+          githubLink: projectsList[index].githubLink,
+          image: projectsList[index].imageAsset,
+        );
+      }).toList(),
     );
   }
 }

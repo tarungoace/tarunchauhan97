@@ -24,3 +24,11 @@ const kPersianLocale = Locale('fa');
 
 const kShabnamFontFamily = 'Shabnam';
 const kShabnamFarsiDigitFontFamily = 'ShabnamFD';
+
+const String piGemsGithub = 'https://github.com/tarunchauhan97/pigemshub-open';
+
+const String virtDoct = 'https://github.com/tarunchauhan97/doctorconnext';
+
+const String foodOnDelString = 'https://github.com/tarunchauhan97/food-menu-order-delivery-app';
+
+const String learning1 = 'https://github.com/tarunchauhan97/learning-courses-getx-app';

@@ -24,8 +24,8 @@ class LanguageSkills extends StatelessWidget {
               name: "Hindi",
               icon: SvgPicture.asset(
                 kIndiaFlagRoundedSvgPath,
-                height: 50,
-                width: 50,
+                height: 10,
+                width: 10,
 
               ),
             ),

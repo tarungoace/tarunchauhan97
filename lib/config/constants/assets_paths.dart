@@ -14,7 +14,7 @@ const kTelegramSvgPath = 'assets/icons/telegram.svg';
 
 const meeImage = "assets/images/mee.jpg";
 
-const String piGemsHubBanner = 'assets/images/pigemshub1.jpg';
+const String piGemsHubBanner = 'assets/images/pigemshub1.png';
 
 const String learningBanner = 'assets/images/learning1.png';
 
