@@ -6,6 +6,7 @@ import 'package:personal_website/provider/tagged_list_provider.dart';
 import 'package:personal_website/ui/home/widgets/auto_tagged_item.dart';
 import 'package:personal_website/ui/home/widgets/about_me/about_me.dart';
 import 'package:personal_website/ui/home/widgets/contact_me/contact_me.dart';
+import 'package:personal_website/ui/home/widgets/my_projects/my_projects.dart';
 import 'package:personal_website/ui/home/widgets/my_services/my_services.dart';
 import 'package:personal_website/ui/home/widgets/my_skills/my_skills.dart';
 import 'package:personal_website/ui/home/widgets/home_welcome.dart';
@@ -61,6 +62,11 @@ class HomeSliverListContent extends ConsumerWidget {
           const AutoTaggedItem(
             tag: kHomeMySkillsItemTag,
             child: MySkills(),
+          ),
+          screen.verticalSpace(30),
+          const AutoTaggedItem(
+            tag: kHomeMyProjectsTag,
+            child: MyProjectsData(),
           ),
           screen.verticalSpace(30),
           const AutoTaggedItem(
