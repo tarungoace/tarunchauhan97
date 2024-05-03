@@ -27,6 +27,7 @@ class HomeScreen extends HookConsumerWidget {
     return Scaffold(
       endDrawer: drawer,
       resizeToAvoidBottomInset: false,
+
       body: Stack(
         children: [
           const HomeSliverListContent(),

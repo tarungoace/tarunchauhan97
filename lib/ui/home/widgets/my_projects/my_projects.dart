@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:personal_website/common/responsive/responsive.dart';
 import 'package:personal_website/common/responsive/src/constants.dart';
 import 'package:personal_website/common/responsive/src/extensions.dart';
@@ -51,7 +53,10 @@ class LargeScreenLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IntrinsicHeight(
+
       child: Column(
+        // direction: Axis.vertical,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Row(
             children: [
@@ -102,7 +107,11 @@ class SmallScreenLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Flex(
+      direction: Axis.vertical,
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.start,
+
       children: List.generate(projectsList.length, (index) {
         return MyProjectsCard(
           title: projectsList[index].titleProject,

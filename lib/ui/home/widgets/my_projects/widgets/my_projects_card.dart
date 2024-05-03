@@ -23,87 +23,90 @@ class MyProjectsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       margin: const EdgeInsets.all(16),
-      color: Colors.white,
+      color: Colors.black,
       child: Padding(
         padding: const EdgeInsets.all(15),
-        child: Stack(
+        child: Column(
           children: [
-            Column(
+            Container(
+              clipBehavior: Clip.hardEdge,
+              decoration: const BoxDecoration(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(30),
+                ),
+              ),
+              child: Image.asset(
+                image ?? 'assets/images/background1.jpg',
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Container(
-                  child: Image.asset(
-                    image ?? 'assets/images/background1.jpg',
-                  ),
-                  decoration: BoxDecoration(),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    githubLink != null
-                        ? CustomElevatedButton(
-                            onPressed: () async {
-                              final Uri url = Uri.parse(githubLink!);
+                githubLink != null
+                    ? CustomElevatedButton(
+                        onPressed: () async {
+                          final Uri url = Uri.parse(githubLink!);
 
-                              final bool isLaunch = await canLaunchUrl(url);
-                              if (isLaunch) {
-                                await launchUrl(url);
-                              } else {
-                                ScaffoldMessenger.of(context).showSnackBar(
-                                  const SnackBar(
-                                    content: Text("Cannot Launch"),
-                                  ),
-                                );
-                              }
-                            },
-                            borderRadius: BorderRadius.circular(100),
-                            borderSide: BorderSide(
-                              color: Theme.of(context).primaryColor,
-                            ),
-                            foregroundColor:
-                                Theme.of(context).primaryColorLight,
-                            backgroundColor: Colors.black,
-                            elevation: 0,
-                            child: Text("Github"),
-                          )
-                        : SizedBox(),
-                    // CustomElevatedButton(
-                    //   onPressed: () {},
-                    //   borderRadius: BorderRadius.circular(100),
-                    //   borderSide: BorderSide(
-                    //     color: Theme.of(context).primaryColor,
-                    //   ),
-                    //   foregroundColor: Theme.of(context).primaryColorLight,
-                    //   backgroundColor: Colors.black12,
-                    //   elevation: 0,
-                    //   child: Text("Website"),
-                    // ),
-                    // CustomElevatedButton(
-                    //   onPressed: () {},
-                    //   borderRadius: BorderRadius.circular(100),
-                    //   borderSide: BorderSide(
-                    //     color: Theme.of(context).primaryColor,
-                    //   ),
-                    //   foregroundColor: Theme.of(context).primaryColorLight,
-                    //   backgroundColor: Colors.black12,
-                    //   elevation: 0,
-                    //   child: Text("Playstore"),
-                    // ),
-                  ],
-                ),
+                          final bool isLaunch = await canLaunchUrl(url);
+                          if (isLaunch) {
+                            await launchUrl(url);
+                          } else {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                content: Text("Cannot Launch"),
+                              ),
+                            );
+                          }
+                        },
+                        borderRadius: BorderRadius.circular(100),
+                        borderSide: BorderSide(
+                          color: Theme.of(context).primaryColor,
+                        ),
+                        foregroundColor: Theme.of(context).primaryColorLight,
+                        backgroundColor: Colors.black,
+                        elevation: 0,
+                        child: Text(
+                          "Github",
+                        ),
+                      )
+                    : SizedBox(),
+                // CustomElevatedButton(
+                //   onPressed: () {},
+                //   borderRadius: BorderRadius.circular(100),
+                //   borderSide: BorderSide(
+                //     color: Theme.of(context).primaryColor,
+                //   ),
+                //   foregroundColor: Theme.of(context).primaryColorLight,
+                //   backgroundColor: Colors.black12,
+                //   elevation: 0,
+                //   child: Text("Website"),
+                // ),
+                // CustomElevatedButton(
+                //   onPressed: () {},
+                //   borderRadius: BorderRadius.circular(100),
+                //   borderSide: BorderSide(
+                //     color: Theme.of(context).primaryColor,
+                //   ),
+                //   foregroundColor: Theme.of(context).primaryColorLight,
+                //   backgroundColor: Colors.black12,
+                //   elevation: 0,
+                //   child: Text("Playstore"),
+                // ),
               ],
             ),
-            Expanded(
-              child: Center(
-                child: Text(
-                  title ?? '',
-                  style: TextStyle(
-                    fontSize: 40,
-                    fontWeight: FontWeight.bold,
-                    color: Theme.of(context).primaryColor,
-                  ),
+            const SizedBox(
+              height: 10,
+            ),
+            Center(
+              child: Text(
+                title ?? '',
+                style: TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                  color: Theme.of(context).primaryColor,
                 ),
               ),
             ),
