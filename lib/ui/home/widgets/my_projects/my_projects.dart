@@ -7,6 +7,7 @@ import 'package:personal_website/common/responsive/src/extensions.dart';
 import 'package:personal_website/common/responsive/src/screen.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:personal_website/ui/home/widgets/my_projects/widgets/my_projects_card.dart';
+import 'package:personal_website/ui/widgets/animated_title_text.dart';
 
 class MyProjectsData extends StatelessWidget {
   const MyProjectsData({super.key});
@@ -30,13 +31,16 @@ class MyProjectsData extends StatelessWidget {
       padding: screen.contentPadding,
       child: Column(
         children: [
-          Text(
-            "These are my projects Data",
-            style: TextStyle(
-              fontSize: 24,
-              color: Colors.black,
-            ),
+          const AnimatedTitleText(
+            title: "My Open Source Projects",
           ),
+          // const Text(
+          //   "My Open Source Projects",
+          //   style: TextStyle(
+          //     fontSize: 30,
+          //     color: Colors.black,
+          //   ),
+          // ),
           const SizedBox(height: 30),
           layout,
         ],

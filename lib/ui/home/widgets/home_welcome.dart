@@ -1,4 +1,3 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -42,34 +41,55 @@ class HomeWelcome extends ConsumerWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    localization.homeWelcome,
-                    style: screen.fromMTD(
-                      theme.textTheme.titleLarge,
-                      theme.textTheme.headlineSmall,
-                      theme.textTheme.headlineMedium,
+                  // Text(
+                  //   localization.homeWelcome,
+                  //   style: screen.fromMTD(
+                  //     theme.textTheme.titleLarge,
+                  //     theme.textTheme.headlineSmall,
+                  //     theme.textTheme.headlineMedium,
+                  //   ),
+                  // ),
+                  CircleAvatar(
+                    backgroundImage: AssetImage(
+                      'assets/profile/me1.JPG',
                     ),
+                    radius: screen.fromMTD(80, 100, 150),
+                    // child: Image.asset(
+                    //   'assets/profile/me1.JPG',
+                    //   height: 300,
+                    //   width: 300,
+                    //   fit: BoxFit.fill,
+                    // ),
                   ),
+
                   const SizedBox(height: 20),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: FittedBox(
-                      child: AnimatedTextKit(
-                        repeatForever: true,
-                        pause: const Duration(seconds: 2),
-                        animatedTexts: [
-                          TypewriterAnimatedText(
-                            localization.myName,
-                            textStyle: screen.fromMTD(
-                              theme.textTheme.headlineMedium,
-                              theme.textTheme.displaySmall,
-                              theme.textTheme.displayMedium,
-                            ),
-                            speed: const Duration(milliseconds: 100),
-                            cursor: '|',
-                          ),
-                        ],
+                      child: Text(
+                        "Tarun Singh Chauhan",
+                        style: screen.fromMTD(
+                          theme.textTheme.headlineMedium,
+                          theme.textTheme.displaySmall,
+                          theme.textTheme.displayMedium,
+                        ),
                       ),
+                      // child: AnimatedTextKit(
+                      //   repeatForever: true,
+                      //   pause: const Duration(seconds: 2),
+                      //   animatedTexts: [
+                      //     TypewriterAnimatedText(
+                      //       localization.myName,
+                      //       textStyle: screen.fromMTD(
+                      //         theme.textTheme.headlineMedium,
+                      //         theme.textTheme.displaySmall,
+                      //         theme.textTheme.displayMedium,
+                      //       ),
+                      //       speed: const Duration(milliseconds: 100),
+                      //       cursor: '|',
+                      //     ),
+                      //   ],
+                      // ),
                     ),
                   ),
                   const SizedBox(height: 40),
