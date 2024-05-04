@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:personal_website/common/responsive/responsive.dart';
-import 'package:personal_website/config/constants/assets_paths.dart';
 import 'package:personal_website/config/constants/home_items_tags.dart';
 import 'package:personal_website/provider/tagged_list_provider.dart';
 import 'package:personal_website/ui/home/widgets/auto_tagged_item.dart';
@@ -12,6 +11,7 @@ import 'package:personal_website/ui/home/widgets/my_services/my_services.dart';
 import 'package:personal_website/ui/home/widgets/my_skills/my_skills.dart';
 import 'package:personal_website/ui/home/widgets/home_welcome.dart';
 import 'package:personal_website/ui/home/widgets/sliver_app_bar/home_appbar.dart';
+import 'package:personal_website/ui/widgets/bg_container.dart';
 
 import 'widgets/sliver_app_bar/widgets/home_drawer.dart';
 
@@ -28,6 +28,7 @@ class HomeScreen extends HookConsumerWidget {
     return Scaffold(
       endDrawer: drawer,
       resizeToAvoidBottomInset: false,
+      backgroundColor: Colors.black,
       body: Stack(
         children: [
           const HomeSliverListContent(),
@@ -45,55 +46,50 @@ class HomeSliverListContent extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final screen = WebsiteScreen.of(context);
 
-    // I didn't use ListView or SliverList because of lag and performance issue
     return SingleChildScrollView(
       controller: ref.watch(homeScrollControllerProvider),
       child: Column(
         children: [
-          const AutoTaggedItem(
+          const TaggedBarWidget(
             tag: kHomeWelcomeItemTag,
             child: HomeWelcome(),
           ),
           // screen.verticalSpace(30),
-          AutoTaggedItem(
+          const TaggedBarWidget(
             tag: kHomeAboutMeItemTag,
-            child: Container(
-              height: screen.height,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(
-                    bgWeb,
-
-                  ),
-                  fit: BoxFit.cover,
-                  colorFilter: ColorFilter.mode(
-                      Colors.black.withOpacity(0.5), BlendMode.darken),
-                ),
-              ),
+            child: BGContainer(
               child: AboutMe(),
             ),
           ),
-          screen.verticalSpace(15),
-          const AutoTaggedItem(
+          // screen.verticalSpace(15),
+          const TaggedBarWidget(
             tag: kHomeMySkillsItemTag,
-            child: MySkills(),
+            child: BGContainer(
+              child: MySkills(),
+            ),
           ),
-          screen.verticalSpace(30),
-          const AutoTaggedItem(
+          // screen.verticalSpace(30),
+          const TaggedBarWidget(
             tag: kHomeMyProjectsTag,
-            child: MyProjectsData(),
+            child: BGContainer(
+              child: MyProjectsData(),
+            ),
           ),
-          screen.verticalSpace(30),
-          const AutoTaggedItem(
+          // screen.verticalSpace(30),
+          const TaggedBarWidget(
             tag: kHomeMyServicesTag,
-            child: MyServices(),
+            child: BGContainer(
+              child: MyServices(),
+            ),
           ),
-          screen.verticalSpace(30),
-          const AutoTaggedItem(
+          // screen.verticalSpace(30),
+          const TaggedBarWidget(
             tag: kHomeContactMeItemTag,
-            child: ContactMe(),
+            child: BGContainer(
+              child: ContactMe(),
+            ),
           ),
-          screen.verticalSpace(10),
+          // screen.verticalSpace(10),
         ],
       ),
     );

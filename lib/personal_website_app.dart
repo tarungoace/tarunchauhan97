@@ -21,6 +21,7 @@ class PersonalWebsiteApp extends ConsumerWidget {
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: kSupportedLocales,
       locale: currentLocale,
+      color: Colors.black,
       builder: (context, child) {
         return WebsiteScreen(
           mediaQueryData: MediaQuery.of(context),

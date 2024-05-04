@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:personal_website/provider/tagged_list_provider.dart';
 
-final class AutoTaggedItem extends ConsumerWidget {
-  const AutoTaggedItem({
+final class TaggedBarWidget extends ConsumerWidget {
+  const TaggedBarWidget({
     super.key,
     required this.tag,
     required this.child,
