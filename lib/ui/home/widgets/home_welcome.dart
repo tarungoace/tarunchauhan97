@@ -33,7 +33,7 @@ class HomeWelcome extends ConsumerWidget {
 
           return Stack(
             children: [
-              HomeCarousal(),
+              const HomeCarousal(),
               Positioned(
                 top: 50,
                 child: Container(
@@ -173,6 +173,7 @@ class _CircularLinkButton extends StatelessWidget {
         svgPath,
         height: 18,
         width: 18,
+        color: Colors.white,
         colorFilter: const ColorFilter.mode(
           Colors.white,
           BlendMode.srcIn,

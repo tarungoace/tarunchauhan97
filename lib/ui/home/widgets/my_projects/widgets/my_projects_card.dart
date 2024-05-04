@@ -23,6 +23,7 @@ class MyProjectsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final screen = WebsiteScreen.of(context);
     return Card(
       margin: const EdgeInsets.all(16),
       color: AppColors.onlyBlue,
@@ -115,7 +116,7 @@ class MyProjectsCard extends StatelessWidget {
               child: Text(
                 title ?? '',
                 style: TextStyle(
-                  fontSize: 40,
+                  fontSize: screen.fromMTD(18, 24, 30),
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
