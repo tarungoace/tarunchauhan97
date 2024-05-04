@@ -2,11 +2,15 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:personal_website/config/constants/assets_paths.dart';
 
+import '../../common/responsive/src/screen.dart';
+
 class HomeCarousal extends StatelessWidget {
   const HomeCarousal({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final screen = WebsiteScreen.of(context);
     return Row(
       children: [
         Expanded(

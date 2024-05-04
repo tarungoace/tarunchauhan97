@@ -7,6 +7,7 @@ import 'package:personal_website/config/constants/assets_paths.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:personal_website/config/constants/constants.dart';
 import 'package:personal_website/config/constants/home_items_tags.dart';
+import 'package:personal_website/config/theme/app_colors.dart';
 import 'package:personal_website/config/theme/text_theme.dart';
 import 'package:personal_website/provider/tagged_list_provider.dart';
 import 'package:personal_website/provider/url_handler.dart';
@@ -59,7 +60,7 @@ class HomeWelcome extends ConsumerWidget {
                         backgroundImage: AssetImage(
                           'assets/profile/me1.JPG',
                         ),
-                        radius: screen.fromMTD(80, 100, 150),
+                        radius: screen.fromMTD(120, 150, 180),
                         // child: Image.asset(
                         //   'assets/profile/me1.JPG',
                         //   height: 300,
@@ -80,22 +81,6 @@ class HomeWelcome extends ConsumerWidget {
                               theme.textTheme.displayMedium,
                             ),
                           ),
-                          // child: AnimatedTextKit(
-                          //   repeatForever: true,
-                          //   pause: const Duration(seconds: 2),
-                          //   animatedTexts: [
-                          //     TypewriterAnimatedText(
-                          //       localization.myName,
-                          //       textStyle: screen.fromMTD(
-                          //         theme.textTheme.headlineMedium,
-                          //         theme.textTheme.displaySmall,
-                          //         theme.textTheme.displayMedium,
-                          //       ),
-                          //       speed: const Duration(milliseconds: 100),
-                          //       cursor: '|',
-                          //     ),
-                          //   ],
-                          // ),
                         ),
                       ),
                       const SizedBox(height: 40),
@@ -117,9 +102,20 @@ class HomeWelcome extends ConsumerWidget {
                           color: theme.primaryColor,
                         ),
                         foregroundColor: theme.primaryColorLight,
-                        backgroundColor: Colors.black12,
+                        backgroundColor: theme.primaryColorDark,
+                        gradientBackground: LinearGradient(
+                          colors: [
+                            theme.primaryColorLight,
+                            theme.primaryColorDark,
+                          ],
+                        ),
                         elevation: 0,
-                        child: Text(localization.hireMe),
+                        child: Text(
+                          localization.hireMe,
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
                       ),
                       const SizedBox(height: 60),
                       const Row(
@@ -170,7 +166,7 @@ class _CircularLinkButton extends StatelessWidget {
       onPressed: () => launchUrlOnWebBrowser(link),
       style: ElevatedButton.styleFrom(
         shape: const CircleBorder(),
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.darkBlue,
         padding: const EdgeInsets.all(20),
       ),
       child: SvgPicture.asset(

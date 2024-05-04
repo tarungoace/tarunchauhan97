@@ -25,8 +25,10 @@ class CustomNavigationBar extends HookConsumerWidget {
       kHomeWelcomeItemTag: localization.home,
       kHomeAboutMeItemTag: localization.aboutMe,
       kHomeMySkillsItemTag: localization.skills,
+      kHomeMyProjectsTag : "My Projects",
       kHomeMyServicesTag: localization.services,
       kHomeContactMeItemTag: localization.contact,
+
     };
 
     List<Widget> buildItems() {

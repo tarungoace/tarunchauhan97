@@ -38,11 +38,14 @@ class CustomTextFormField extends StatelessWidget {
 
     Widget textFormFiled = TextFormField(
       controller: controller,
-      cursorColor: theme.primaryColor,
+      cursorColor: Colors.white,
       expands: expanded,
       maxLines: maxLines,
       minLines: minLines,
       maxLength: maxLength,
+      style: TextStyle(
+        color: Colors.white,
+      ),
       textAlignVertical: TextAlignVertical.top,
       validator: (text) {
         final result = requiredFieldsValidator(text);
@@ -50,14 +53,20 @@ class CustomTextFormField extends StatelessWidget {
         return validator?.call(text);
       },
       decoration: InputDecoration(
-        hintText: hint,
-        border: const OutlineInputBorder(),
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            color: theme.primaryColor,
+          hintText: hint,
+          hintStyle: TextStyle(
+            color: Colors.white,
           ),
-        ),
-      ),
+          border: const OutlineInputBorder(),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              color: Colors.white,
+            ),
+          ),
+          enabledBorder: OutlineInputBorder(
+              borderSide: BorderSide(
+            color: Colors.white,
+          ))),
     );
 
     if (expanded) {
@@ -70,7 +79,7 @@ class CustomTextFormField extends StatelessWidget {
         Text(
           title,
           style: theme.textTheme.titleLarge!.copyWith(
-            color: theme.colorScheme.onSurface.withOpacity(0.6),
+            color: Colors.white,
           ),
         ),
         const SizedBox(height: 10),

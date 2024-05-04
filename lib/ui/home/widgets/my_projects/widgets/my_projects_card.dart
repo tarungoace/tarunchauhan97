@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:personal_website/common/responsive/responsive.dart';
+import 'package:personal_website/config/theme/app_colors.dart';
 import 'package:personal_website/provider/tagged_list_provider.dart';
 import 'package:personal_website/ui/widgets/custom_elevated_button.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -21,9 +22,10 @@ class MyProjectsCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Card(
       margin: const EdgeInsets.all(16),
-      color: Colors.black,
+      color: AppColors.onlyBlue,
       child: Padding(
         padding: const EdgeInsets.all(15),
         child: Column(
@@ -67,9 +69,18 @@ class MyProjectsCard extends StatelessWidget {
                         ),
                         foregroundColor: Theme.of(context).primaryColorLight,
                         backgroundColor: Colors.black,
+                        gradientBackground: LinearGradient(
+                          colors: [
+                            theme.primaryColorLight,
+                            theme.primaryColorDark,
+                          ],
+                        ),
                         elevation: 0,
                         child: Text(
                           "Github",
+                          style: TextStyle(
+                            color: Colors.white
+                          ),
                         ),
                       )
                     : SizedBox(),
@@ -106,7 +117,7 @@ class MyProjectsCard extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 40,
                   fontWeight: FontWeight.bold,
-                  color: Theme.of(context).primaryColor,
+                  color: Colors.white,
                 ),
               ),
             ),

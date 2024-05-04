@@ -33,13 +33,13 @@ class BGContainer extends StatelessWidget {
             bottom: 50,
           ),
       alignment: Alignment.center,
-      decoration: const BoxDecoration(
+      decoration:  BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [
-            AppColors.grotoBlue,
-            AppColors.greyBlue,
+            AppColors.onlyBlue,
+            AppColors.darkBlue,
           ],
         ),
         // image: DecorationImage(

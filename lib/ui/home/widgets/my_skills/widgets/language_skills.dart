@@ -55,7 +55,7 @@ class LanguageSkill extends StatelessWidget {
     final screen = WebsiteScreen.of(context);
 
     return PhysicalModel(
-      color: AppColors.grotoBlue,
+      color: AppColors.onlyBlue,
       borderRadius: BorderRadius.circular(100),
       elevation: 2,
       child: Padding(
@@ -66,25 +66,17 @@ class LanguageSkill extends StatelessWidget {
         child: Row(
           children: [
             ClipOval(
-
               child: Transform.scale(
                 scale: 2,
                 child: SvgPicture.asset(
                   icon,
                   fit: BoxFit.fill,
                   width: 40,
-
                   semanticsLabel: icon.split('/').last,
                 ),
               ),
             ),
-            // SizedBox.square(
-            //   dimension: 40,
-            //   child: icon,
-            // ),
-            const SizedBox(
-              width: 20,
-            ),
+            const SizedBox(width: 20),
             Text(
               name,
               style: theme.textTheme.titleMedium!.copyWith(
