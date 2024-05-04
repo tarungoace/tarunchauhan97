@@ -13,7 +13,7 @@ ThemeData createLightTheme(Locale currentLocale) {
 
   return ThemeData(
     fontFamily: fontFamily,
-    primaryColorLight: AppColors.blueDark,
+    primaryColorLight: AppColors.darkBlue,
     primaryColor: AppColors.blue,
     primaryColorDark: AppColors.onlyBlue,
     colorScheme: ColorScheme.light(

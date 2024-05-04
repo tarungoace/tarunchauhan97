@@ -8,12 +8,14 @@ class BGContainer extends StatelessWidget {
     super.key,
     this.child,
     this.width,
+    this.height,
     this.padding,
     this.margin,
   });
 
   final Widget? child;
   final double? width;
+  final double? height;
   final EdgeInsets? padding;
   final EdgeInsets? margin;
 
@@ -22,23 +24,22 @@ class BGContainer extends StatelessWidget {
     final screen = WebsiteScreen.of(context);
 
     return Container(
-      // height: screen.height,
+      height: height,
       width: width,
       margin: margin,
       padding: padding ??
-          EdgeInsets.only(
+          const EdgeInsets.only(
             top: 50,
             bottom: 50,
           ),
       alignment: Alignment.center,
-
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [
-            AppColors.blueDark, // Dark shade
-            AppColors.onlyBlue, // You can add more colors if needed
+            AppColors.grotoBlue, // Dark shade
+            AppColors.greyBlue, // You can add more colors if needed
           ],
         ),
         // image: DecorationImage(
