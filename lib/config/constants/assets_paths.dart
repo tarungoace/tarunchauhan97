@@ -5,7 +5,7 @@ const kMyPictureImagePath = 'assets/images/my_picture2.jpg';
 
 const kMobileDevelopmentIconPath = 'assets/icons/mobile-development.svg';
 const kEnglishFlagRoundedSvgPath = 'assets/icons/english_flag_rounded.svg';
-const kIndiaFlagRoundedSvgPath = 'assets/icons/india_flag.svg';
+const kIndiaFlagRoundedSvgPath = 'assets/icons/india.svg';
 
 const kGithubSvgPath = 'assets/icons/github.svg';
 const kLinkedinSvgPath = 'assets/icons/linkedin.svg';

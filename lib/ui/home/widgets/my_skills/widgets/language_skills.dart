@@ -3,6 +3,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:personal_website/common/responsive/responsive.dart';
 import 'package:personal_website/config/constants/assets_paths.dart';
+import 'package:personal_website/config/theme/app_colors.dart';
 import 'package:personal_website/ui/home/widgets/my_skills/widgets/skills_section.dart';
 
 class LanguageSkills extends StatelessWidget {
@@ -22,21 +23,14 @@ class LanguageSkills extends StatelessWidget {
           Expanded(
             child: LanguageSkill(
               name: "Hindi",
-              icon: SvgPicture.asset(
-                kIndiaFlagRoundedSvgPath,
-                height: 10,
-                width: 10,
-
-              ),
+              icon: kIndiaFlagRoundedSvgPath,
             ),
           ),
           const SizedBox(width: 20),
           Expanded(
             child: LanguageSkill(
               name: localization.languageNameEnglish,
-              icon: SvgPicture.asset(
-                kEnglishFlagRoundedSvgPath,
-              ),
+              icon: kEnglishFlagRoundedSvgPath,
             ),
           ),
         ],
@@ -53,7 +47,7 @@ class LanguageSkill extends StatelessWidget {
   });
 
   final String name;
-  final Widget icon;
+  final String icon;
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +55,7 @@ class LanguageSkill extends StatelessWidget {
     final screen = WebsiteScreen.of(context);
 
     return PhysicalModel(
-      color: theme.colorScheme.surface,
+      color: AppColors.grotoBlue,
       borderRadius: BorderRadius.circular(100),
       elevation: 2,
       child: Padding(
@@ -71,10 +65,23 @@ class LanguageSkill extends StatelessWidget {
         ),
         child: Row(
           children: [
-            SizedBox.square(
-              dimension: 40,
-              child: icon,
+            ClipOval(
+
+              child: Transform.scale(
+                scale: 2,
+                child: SvgPicture.asset(
+                  icon,
+                  fit: BoxFit.fill,
+                  width: 40,
+
+                  semanticsLabel: icon.split('/').last,
+                ),
+              ),
             ),
+            // SizedBox.square(
+            //   dimension: 40,
+            //   child: icon,
+            // ),
             const SizedBox(
               width: 20,
             ),
@@ -82,6 +89,7 @@ class LanguageSkill extends StatelessWidget {
               name,
               style: theme.textTheme.titleMedium!.copyWith(
                 fontWeight: FontWeight.bold,
+                color: Colors.white,
               ),
             ),
           ],

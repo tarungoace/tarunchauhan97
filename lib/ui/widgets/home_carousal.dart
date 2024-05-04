@@ -21,6 +21,7 @@ class HomeCarousal extends StatelessWidget {
                 autoPlayInterval: const Duration(seconds: 10),
                 autoPlayAnimationDuration: const Duration(seconds: 4),
 
+
               ),
               itemBuilder: (BuildContext context, int index, _) {
                 return ColorFiltered(
