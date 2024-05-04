@@ -57,7 +57,7 @@ class HomeAppBar extends HookConsumerWidget {
         child: Container(
           height: kToolbarHeight,
           padding: screen.contentPadding,
-          color: Colors.black.withOpacity(0.5),
+          color: Colors.black,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -67,7 +67,7 @@ class HomeAppBar extends HookConsumerWidget {
                 style: theme.textTheme.headlineLarge!.copyWith(
                   fontFamily: 'SassyFrass',
                   fontWeight: FontWeight.bold,
-                  color: onSurfaceColor,
+                  color: Colors.white,
                   fontSize: 40
                 ),
               ),
@@ -85,7 +85,7 @@ class HomeAppBar extends HookConsumerWidget {
                           icon: Icon(
                             Icons.menu,
                             fill: 1,
-                            color: onSurfaceColor,
+                            color: Colors.white,
                           ),
                         ),
                       );

@@ -33,6 +33,7 @@ class SkillsSection extends StatelessWidget {
             title,
             style: theme.textTheme.headlineSmall!.copyWith(
               fontWeight: FontWeight.bold,
+              color: Colors.white,
             ),
           ),
         ),
@@ -41,7 +42,7 @@ class SkillsSection extends StatelessWidget {
           padding: const EdgeInsetsDirectional.only(start: 10),
           child: Text(
             description,
-            style: theme.textTheme.titleMedium,
+            style: theme.textTheme.titleMedium!.copyWith(color: Colors.white),
           ),
         ),
         const SizedBox(height: 20),

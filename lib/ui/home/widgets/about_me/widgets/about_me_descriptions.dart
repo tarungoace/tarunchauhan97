@@ -73,8 +73,14 @@ class AboutMeDescriptions extends ConsumerWidget {
             CustomElevatedButton(
               onPressed: () =>
                   ref.read(taggedListNotifierProvider.notifier).animateToTag(kHomeContactMeItemTag),
-              backgroundColor: Colors.white,
-              foregroundColor: theme.primaryColor,
+              // backgroundColor: Colors.white,
+              // foregroundColor: theme.primaryColor,
+              gradientBackground: LinearGradient(
+                colors: [
+                  theme.primaryColorLight,
+                  theme.primaryColorDark,
+                ],
+              ),
               borderSide: BorderSide(
                 color: theme.primaryColor,
               ),

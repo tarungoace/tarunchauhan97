@@ -38,8 +38,8 @@ class BGContainer extends StatelessWidget {
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [
-            AppColors.grotoBlue, // Dark shade
-            AppColors.greyBlue, // You can add more colors if needed
+            AppColors.grotoBlue,
+            AppColors.greyBlue,
           ],
         ),
         // image: DecorationImage(

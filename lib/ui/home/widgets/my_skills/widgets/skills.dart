@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:personal_website/config/theme/app_colors.dart';
 import 'package:personal_website/ui/home/widgets/my_skills/widgets/skills_section.dart';
 
 class Skills extends StatelessWidget {
@@ -56,21 +57,27 @@ class SkillLabel extends StatelessWidget {
     final theme = Theme.of(context);
 
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
       constraints: const BoxConstraints(minWidth: 80),
       decoration: BoxDecoration(
         border: Border.all(
           color: theme.colorScheme.secondary,
         ),
-        color: Colors.lightBlue.shade50,
+        gradient: LinearGradient(
+          colors: [
+            theme.primaryColorLight,
+            theme.primaryColorDark,
+          ],
+        ),
+        // color: Colors.lightBlue.shade50,
         borderRadius: BorderRadius.circular(100),
       ),
       child: Text(
         label,
         textAlign: TextAlign.center,
         style: theme.textTheme.titleMedium!.copyWith(
-          color: theme.colorScheme.secondaryContainer,
+          color: Colors.white,
         ),
       ),
     );

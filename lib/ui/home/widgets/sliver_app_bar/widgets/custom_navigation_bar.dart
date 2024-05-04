@@ -90,6 +90,7 @@ class NavigationItem extends HookWidget {
             duration: const Duration(milliseconds: 250),
             text: text,
             isSelected: isSelectedState.value,
+
           ),
         ),
       ),
