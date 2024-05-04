@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:personal_website/config/constants/home_items_tags.dart';
+import 'package:tarundevindia/config/constants/home_items_tags.dart';
 
 const _spaceFromTop = kToolbarHeight * 2;
 const _currentItemVisibleArea = 300;

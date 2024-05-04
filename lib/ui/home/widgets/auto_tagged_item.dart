@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:personal_website/provider/tagged_list_provider.dart';
+import 'package:tarundevindia/provider/tagged_list_provider.dart';
 
 final class TaggedBarWidget extends ConsumerWidget {
   const TaggedBarWidget({

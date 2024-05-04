@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:personal_website/common/responsive/responsive.dart';
-import 'package:personal_website/config/theme/app_colors.dart';
-import 'package:personal_website/provider/tagged_list_provider.dart';
-import 'package:personal_website/ui/widgets/custom_elevated_button.dart';
+import 'package:tarundevindia/common/responsive/responsive.dart';
+import 'package:tarundevindia/config/theme/app_colors.dart';
+import 'package:tarundevindia/provider/tagged_list_provider.dart';
+import 'package:tarundevindia/ui/widgets/custom_elevated_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MyProjectsCard extends StatelessWidget {

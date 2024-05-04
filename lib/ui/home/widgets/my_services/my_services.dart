@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:personal_website/common/responsive/responsive.dart';
-import 'package:personal_website/ui/widgets/animated_title_text.dart';
-import 'package:personal_website/ui/home/widgets/my_services/widgets/service_container.dart';
+import 'package:tarundevindia/common/responsive/responsive.dart';
+import 'package:tarundevindia/ui/widgets/animated_title_text.dart';
+import 'package:tarundevindia/ui/home/widgets/my_services/widgets/service_container.dart';
 
 class MyServices extends StatelessWidget {
   const MyServices({super.key});

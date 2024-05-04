@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:personal_website/config/constants/constants.dart';
-import 'package:personal_website/common/responsive/responsive.dart';
-import 'package:personal_website/config/constants/home_items_tags.dart';
-import 'package:personal_website/provider/tagged_list_provider.dart';
-import 'package:personal_website/provider/url_handler.dart';
-import 'package:personal_website/ui/widgets/custom_elevated_button.dart';
+import 'package:tarundevindia/config/constants/constants.dart';
+import 'package:tarundevindia/common/responsive/responsive.dart';
+import 'package:tarundevindia/config/constants/home_items_tags.dart';
+import 'package:tarundevindia/provider/tagged_list_provider.dart';
+import 'package:tarundevindia/provider/url_handler.dart';
+import 'package:tarundevindia/ui/widgets/custom_elevated_button.dart';
 
 class AboutMeDescriptions extends ConsumerWidget {
   const AboutMeDescriptions({

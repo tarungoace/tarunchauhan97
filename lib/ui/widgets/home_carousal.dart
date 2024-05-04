@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:personal_website/config/constants/assets_paths.dart';
+import 'package:tarundevindia/config/constants/assets_paths.dart';
 
 import '../../common/responsive/src/screen.dart';
 

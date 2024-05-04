@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:personal_website/common/responsive/responsive.dart';
-import 'package:personal_website/common/responsive/src/constants.dart';
-import 'package:personal_website/common/responsive/src/extensions.dart';
-import 'package:personal_website/common/responsive/src/screen.dart';
+import 'package:tarundevindia/common/responsive/responsive.dart';
+import 'package:tarundevindia/common/responsive/src/constants.dart';
+import 'package:tarundevindia/common/responsive/src/extensions.dart';
+import 'package:tarundevindia/common/responsive/src/screen.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:personal_website/ui/home/widgets/my_projects/widgets/my_projects_card.dart';
-import 'package:personal_website/ui/widgets/animated_title_text.dart';
+import 'package:tarundevindia/ui/home/widgets/my_projects/widgets/my_projects_card.dart';
+import 'package:tarundevindia/ui/widgets/animated_title_text.dart';
 
 class MyProjectsData extends StatelessWidget {
   const MyProjectsData({super.key});

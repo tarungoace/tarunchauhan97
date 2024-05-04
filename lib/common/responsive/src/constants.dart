@@ -1,5 +1,5 @@
-import 'package:personal_website/config/constants/assets_paths.dart';
-import 'package:personal_website/config/constants/constants.dart';
+import 'package:tarundevindia/config/constants/assets_paths.dart';
+import 'package:tarundevindia/config/constants/constants.dart';
 
 const double kMinMediumHandsetWidth = 360;
 const double kMinLargeHandsetWidth = 400;

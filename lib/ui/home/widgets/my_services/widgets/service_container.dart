@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:personal_website/common/responsive/responsive.dart';
-import 'package:personal_website/config/theme/app_colors.dart';
+import 'package:tarundevindia/common/responsive/responsive.dart';
+import 'package:tarundevindia/config/theme/app_colors.dart';
 
 class ServiceContainer extends StatelessWidget {
   const ServiceContainer({

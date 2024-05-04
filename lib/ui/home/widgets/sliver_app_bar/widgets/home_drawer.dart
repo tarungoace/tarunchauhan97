@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:personal_website/config/theme/app_colors.dart';
-import 'package:personal_website/ui/home/widgets/sliver_app_bar/widgets/change_language_menu_button.dart';
-import 'package:personal_website/ui/home/widgets/sliver_app_bar/widgets/custom_navigation_bar.dart';
+import 'package:tarundevindia/config/theme/app_colors.dart';
+import 'package:tarundevindia/ui/home/widgets/sliver_app_bar/widgets/change_language_menu_button.dart';
+import 'package:tarundevindia/ui/home/widgets/sliver_app_bar/widgets/custom_navigation_bar.dart';
 
 class HomeDrawer extends StatelessWidget {
   const HomeDrawer({super.key});

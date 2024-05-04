@@ -2,17 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:personal_website/common/responsive/responsive.dart';
-import 'package:personal_website/config/constants/assets_paths.dart';
+import 'package:tarundevindia/common/responsive/responsive.dart';
+import 'package:tarundevindia/config/constants/assets_paths.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:personal_website/config/constants/constants.dart';
-import 'package:personal_website/config/constants/home_items_tags.dart';
-import 'package:personal_website/config/theme/app_colors.dart';
-import 'package:personal_website/config/theme/text_theme.dart';
-import 'package:personal_website/provider/tagged_list_provider.dart';
-import 'package:personal_website/provider/url_handler.dart';
-import 'package:personal_website/ui/widgets/custom_elevated_button.dart';
-import 'package:personal_website/ui/widgets/home_carousal.dart';
+import 'package:tarundevindia/config/constants/constants.dart';
+import 'package:tarundevindia/config/constants/home_items_tags.dart';
+import 'package:tarundevindia/config/theme/app_colors.dart';
+import 'package:tarundevindia/config/theme/text_theme.dart';
+import 'package:tarundevindia/provider/tagged_list_provider.dart';
+import 'package:tarundevindia/provider/url_handler.dart';
+import 'package:tarundevindia/ui/widgets/custom_elevated_button.dart';
+import 'package:tarundevindia/ui/widgets/home_carousal.dart';
 
 class HomeWelcome extends ConsumerWidget {
   const HomeWelcome({super.key});

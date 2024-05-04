@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:personal_website/common/responsive/responsive.dart';
-import 'package:personal_website/config/constants/assets_paths.dart';
-import 'package:personal_website/config/theme/app_colors.dart';
-import 'package:personal_website/ui/home/widgets/my_skills/widgets/skills_section.dart';
+import 'package:tarundevindia/common/responsive/responsive.dart';
+import 'package:tarundevindia/config/constants/assets_paths.dart';
+import 'package:tarundevindia/config/theme/app_colors.dart';
+import 'package:tarundevindia/ui/home/widgets/my_skills/widgets/skills_section.dart';
 
 class LanguageSkills extends StatelessWidget {
   const LanguageSkills({

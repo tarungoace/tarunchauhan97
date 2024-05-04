@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:personal_website/common/responsive/responsive.dart';
+import 'package:tarundevindia/common/responsive/responsive.dart';
 
 class CustomElevatedButton extends StatelessWidget {
   const CustomElevatedButton({

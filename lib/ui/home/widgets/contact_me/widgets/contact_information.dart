@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:personal_website/config/constants/constants.dart';
+import 'package:tarundevindia/config/constants/constants.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:personal_website/config/theme/app_colors.dart';
+import 'package:tarundevindia/config/theme/app_colors.dart';
 
 class ContactInformation extends StatelessWidget {
   const ContactInformation({super.key});
