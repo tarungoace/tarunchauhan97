@@ -21,3 +21,14 @@ const String learningBanner = 'assets/images/learning1.png';
 const String virtDoctor = 'assets/images/virtdoctor.png';
 
 const String foodOnDel = 'assets/images/foodondel.png';
+
+const String bgWeb = 'assets/banners/bg1.jpeg';
+
+List<String> assetBanners = [
+  'assets/banners/banner1.jpeg',
+  'assets/banners/banner2.jpeg',
+  'assets/banners/banner3.jpeg',
+  'assets/banners/banner4.jpeg',
+  'assets/banners/banner5.jpeg',
+  'assets/banners/banner6.jpeg',
+];

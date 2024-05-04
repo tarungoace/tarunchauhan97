@@ -1,10 +1,13 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:personal_website/common/responsive/responsive.dart';
 import 'package:personal_website/common/responsive/src/constants.dart';
 import 'package:personal_website/common/responsive/src/extensions.dart';
 import 'package:personal_website/common/responsive/src/screen.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:personal_website/ui/home/widgets/my_projects/widgets/my_projects_card.dart';
+import 'package:personal_website/ui/widgets/animated_title_text.dart';
 
 class MyProjectsData extends StatelessWidget {
   const MyProjectsData({super.key});
@@ -28,13 +31,16 @@ class MyProjectsData extends StatelessWidget {
       padding: screen.contentPadding,
       child: Column(
         children: [
-          Text(
-            "These are my projects Data",
-            style: TextStyle(
-              fontSize: 24,
-              color: Colors.black,
-            ),
+          const AnimatedTitleText(
+            title: "My Open Source Projects",
           ),
+          // const Text(
+          //   "My Open Source Projects",
+          //   style: TextStyle(
+          //     fontSize: 30,
+          //     color: Colors.black,
+          //   ),
+          // ),
           const SizedBox(height: 30),
           layout,
         ],
@@ -51,7 +57,10 @@ class LargeScreenLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IntrinsicHeight(
+
       child: Column(
+        // direction: Axis.vertical,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Row(
             children: [
@@ -102,7 +111,11 @@ class SmallScreenLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Flex(
+      direction: Axis.vertical,
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.start,
+
       children: List.generate(projectsList.length, (index) {
         return MyProjectsCard(
           title: projectsList[index].titleProject,

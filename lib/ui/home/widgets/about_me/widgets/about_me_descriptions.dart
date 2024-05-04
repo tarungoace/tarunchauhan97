@@ -33,7 +33,7 @@ class AboutMeDescriptions extends ConsumerWidget {
         Text(
           localization.jobTitle,
           style: theme.textTheme.headlineSmall!.copyWith(
-            color: Colors.black38,
+            color: Colors.white,
           ),
         ),
         const SizedBox(height: 10),
@@ -41,15 +41,18 @@ class AboutMeDescriptions extends ConsumerWidget {
           localization.myName,
           style: theme.textTheme.headlineMedium!.copyWith(
             fontWeight: FontWeight.bold,
+            color: Colors.white,
           ),
           textAlign: aboutMeTextAlign,
         ),
         const SizedBox(height: 10),
+
         Text(
           localization.aboutDescription,
-          style: theme.textTheme.titleMedium,
+          style: theme.textTheme.titleMedium?.copyWith(color: Colors.white,),
           textAlign: aboutMeTextAlign,
         ),
+
         const SizedBox(height: 15),
         Row(
           mainAxisSize: MainAxisSize.min,
