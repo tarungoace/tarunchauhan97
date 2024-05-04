@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:personal_website/config/theme/app_colors.dart';
 
 class AnimatedUnderlineText extends StatelessWidget {
   const AnimatedUnderlineText({
@@ -26,7 +27,8 @@ class AnimatedUnderlineText extends StatelessWidget {
     final textStyle = this.textStyle ?? theme.textTheme.titleMedium!;
     final textSize = textStyle.calculateTextSize(context, text);
     final selectedTextColor = this.selectedTextColor ?? theme.primaryColor;
-    final unselectedTextColor = this.unselectedTextColor ?? theme.colorScheme.onSurface;
+    final unselectedTextColor =
+        this.unselectedTextColor ?? theme.colorScheme.onSurface;
 
     return SizedBox(
       height: textSize.height + underlineMaxHeight,
@@ -39,7 +41,12 @@ class AnimatedUnderlineText extends StatelessWidget {
                 style: textStyle.copyWith(
                   color: isSelected ? selectedTextColor : unselectedTextColor,
                 ),
-                child: Text(text),
+                child: Text(
+                  text,
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
               ),
             ),
           ),
@@ -48,7 +55,7 @@ class AnimatedUnderlineText extends StatelessWidget {
             width: isSelected ? textSize.width : 0.0,
             height: isSelected ? underlineMaxHeight * 0.7 : underlineMaxHeight,
             decoration: BoxDecoration(
-              color: theme.primaryColor,
+              color: AppColors.greyBlue,
               borderRadius: BorderRadius.circular(100),
             ),
           ),
