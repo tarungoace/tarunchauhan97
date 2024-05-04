@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:personal_website/config/constants/constants.dart';
+import 'package:tarundevindia/config/constants/constants.dart';
 
 const _chatIdKey = 'chat_id';
 const _textKey = 'text';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:personal_website/common/responsive/responsive.dart';
-import 'package:personal_website/config/constants/assets_paths.dart';
-import 'package:personal_website/config/theme/app_colors.dart';
+import 'package:tarundevindia/common/responsive/responsive.dart';
+import 'package:tarundevindia/config/constants/assets_paths.dart';
+import 'package:tarundevindia/config/theme/app_colors.dart';
 
 class BGContainer extends StatelessWidget {
   const BGContainer({
@@ -33,13 +33,13 @@ class BGContainer extends StatelessWidget {
             bottom: 50,
           ),
       alignment: Alignment.center,
-      decoration: const BoxDecoration(
+      decoration:  BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [
-            AppColors.grotoBlue,
-            AppColors.greyBlue,
+            AppColors.onlyBlue,
+            AppColors.darkBlue,
           ],
         ),
         // image: DecorationImage(

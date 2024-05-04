@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:personal_website/ui/widgets/animated_underline_text.dart';
+import 'package:tarundevindia/ui/widgets/animated_underline_text.dart';
 
 class AnimatedTitleText extends HookWidget {
   const AnimatedTitleText({

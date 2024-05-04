@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:personal_website/common/responsive/responsive.dart';
+import 'package:tarundevindia/common/responsive/responsive.dart';
+import 'package:tarundevindia/config/theme/app_colors.dart';
 
 class ServiceContainer extends StatelessWidget {
   const ServiceContainer({
@@ -20,11 +21,11 @@ class ServiceContainer extends StatelessWidget {
 
     return Card(
       margin: const EdgeInsets.all(16),
-      color: Colors.white,
+      color: AppColors.onlyBlue,
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: CustomPaint(
-          foregroundPainter: ServiceContainerBorderPainter(theme.primaryColor),
+          foregroundPainter: const ServiceContainerBorderPainter(Colors.white),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 32),
             child: Column(
@@ -33,23 +34,27 @@ class ServiceContainer extends StatelessWidget {
                   padding: const EdgeInsets.all(30),
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    border: Border.all(color: theme.primaryColor),
+                    border: Border.all(
+                      color: Colors.white,
+                    ),
                   ),
                   child: Icon(
                     icon,
-                    color: theme.primaryColor,
+                    color: Colors.white,
                     size: screen.fromMTD(30, 40, 50),
                   ),
                 ),
                 const SizedBox(height: 15),
                 Text(
                   title,
-                  style: theme.textTheme.titleLarge,
+                  style:
+                      theme.textTheme.titleLarge!.copyWith(color: Colors.white),
                 ),
                 const SizedBox(height: 10),
                 Text(
                   description,
-                  style: theme.textTheme.titleMedium,
+                  style: theme.textTheme.titleMedium!
+                      .copyWith(color: Colors.white),
                 ),
               ],
             ),

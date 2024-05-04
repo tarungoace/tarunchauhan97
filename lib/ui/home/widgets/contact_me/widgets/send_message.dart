@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:personal_website/common/responsive/responsive.dart';
-import 'package:personal_website/data/message_sender_api.dart';
-import 'package:personal_website/provider/message_sender_provider.dart';
-import 'package:personal_website/ui/home/widgets/contact_me/form_validator.dart';
-import 'package:personal_website/ui/home/widgets/contact_me/widgets/custom_text_form_field.dart';
-import 'package:personal_website/ui/home/widgets/contact_me/widgets/send_message_snack_bars.dart';
-import 'package:personal_website/ui/widgets/custom_elevated_button.dart';
+import 'package:tarundevindia/common/responsive/responsive.dart';
+import 'package:tarundevindia/config/theme/app_colors.dart';
+import 'package:tarundevindia/data/message_sender_api.dart';
+import 'package:tarundevindia/provider/message_sender_provider.dart';
+import 'package:tarundevindia/ui/home/widgets/contact_me/form_validator.dart';
+import 'package:tarundevindia/ui/home/widgets/contact_me/widgets/custom_text_form_field.dart';
+import 'package:tarundevindia/ui/home/widgets/contact_me/widgets/send_message_snack_bars.dart';
+import 'package:tarundevindia/ui/widgets/custom_elevated_button.dart';
 
 class SendMessage extends HookConsumerWidget {
   const SendMessage({super.key});
@@ -44,6 +45,7 @@ class SendMessage extends HookConsumerWidget {
         title: localization.contactName,
         hint: localization.contactNameHint,
         controller: fullNameController,
+
       ),
       CustomTextFormField(
         title: localization.contactEmail,
@@ -119,6 +121,7 @@ class SendMessage extends HookConsumerWidget {
       child: Form(
         key: formKey,
         child: Card(
+          color: AppColors.onlyBlue,
           child: Padding(
             padding: const EdgeInsets.all(30),
             child: Column(
@@ -128,6 +131,7 @@ class SendMessage extends HookConsumerWidget {
                   localization.contactSendEmailTitle,
                   style: theme.textTheme.headlineSmall!.copyWith(
                     fontWeight: FontWeight.bold,
+                    color: Colors.white
                   ),
                 ),
                 const SizedBox(height: 15),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:personal_website/provider/providers.dart';
-import 'personal_website_app.dart';
+import 'package:tarundevindia/tarun_dev_india_web.dart';
+import 'package:tarundevindia/provider/providers.dart';
 
 Future<void> main() async {
   final container = await initApp();
@@ -9,7 +9,7 @@ Future<void> main() async {
   runApp(
     ProviderScope(
       parent: container,
-      child: const PersonalWebsiteApp(),
+      child: const TarunDevIndiaApp(),
     ),
   );
 }

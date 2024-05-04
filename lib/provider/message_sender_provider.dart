@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:personal_website/data/message_sender_api.dart';
-import 'package:personal_website/provider/providers.dart';
+import 'package:tarundevindia/data/message_sender_api.dart';
+import 'package:tarundevindia/provider/providers.dart';
 
 final messageSenderProvider =
     NotifierProvider<MessageSenderNotifier, SendMessageStatus>(MessageSenderNotifier.new);

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:personal_website/config/constants/assets_paths.dart';
-import 'package:personal_website/config/constants/constants.dart';
-import 'package:personal_website/common/responsive/responsive.dart';
+import 'package:tarundevindia/config/constants/assets_paths.dart';
+import 'package:tarundevindia/config/constants/constants.dart';
+import 'package:tarundevindia/common/responsive/responsive.dart';
 
 class MyAvatar extends StatelessWidget {
   const MyAvatar({

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:personal_website/common/responsive/responsive.dart';
+import 'package:tarundevindia/common/responsive/responsive.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:personal_website/ui/widgets/animated_title_text.dart';
-import 'package:personal_website/ui/home/widgets/contact_me/widgets/contact_information.dart';
-import 'package:personal_website/ui/home/widgets/contact_me/widgets/send_message.dart';
+import 'package:tarundevindia/ui/widgets/animated_title_text.dart';
+import 'package:tarundevindia/ui/home/widgets/contact_me/widgets/contact_information.dart';
+import 'package:tarundevindia/ui/home/widgets/contact_me/widgets/send_message.dart';
 
 class ContactMe extends StatelessWidget {
   const ContactMe({super.key});
@@ -81,6 +81,7 @@ class ContactMeTitle extends StatelessWidget {
             textAlign: TextAlign.center,
             style: theme.textTheme.titleLarge!.copyWith(
               fontWeight: FontWeight.w300,
+              color: Colors.white
             ),
           ),
         ),

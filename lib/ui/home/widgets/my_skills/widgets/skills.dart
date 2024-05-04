@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:personal_website/config/theme/app_colors.dart';
-import 'package:personal_website/ui/home/widgets/my_skills/widgets/skills_section.dart';
+import 'package:tarundevindia/config/theme/app_colors.dart';
+import 'package:tarundevindia/ui/home/widgets/my_skills/widgets/skills_section.dart';
 
 class Skills extends StatelessWidget {
   const Skills({
@@ -57,8 +57,8 @@ class SkillLabel extends StatelessWidget {
     final theme = Theme.of(context);
 
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+      margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
       constraints: const BoxConstraints(minWidth: 80),
       decoration: BoxDecoration(
         border: Border.all(

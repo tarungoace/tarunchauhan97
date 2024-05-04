@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:personal_website/common/responsive/responsive.dart';
-import 'package:personal_website/config/constants/home_items_tags.dart';
-import 'package:personal_website/provider/tagged_list_provider.dart';
-import 'package:personal_website/ui/home/widgets/auto_tagged_item.dart';
-import 'package:personal_website/ui/home/widgets/about_me/about_me.dart';
-import 'package:personal_website/ui/home/widgets/contact_me/contact_me.dart';
-import 'package:personal_website/ui/home/widgets/my_projects/my_projects.dart';
-import 'package:personal_website/ui/home/widgets/my_services/my_services.dart';
-import 'package:personal_website/ui/home/widgets/my_skills/my_skills.dart';
-import 'package:personal_website/ui/home/widgets/home_welcome.dart';
-import 'package:personal_website/ui/home/widgets/sliver_app_bar/home_appbar.dart';
-import 'package:personal_website/ui/widgets/bg_container.dart';
+import 'package:tarundevindia/common/responsive/responsive.dart';
+import 'package:tarundevindia/config/constants/home_items_tags.dart';
+import 'package:tarundevindia/provider/tagged_list_provider.dart';
+import 'package:tarundevindia/ui/home/widgets/auto_tagged_item.dart';
+import 'package:tarundevindia/ui/home/widgets/about_me/about_me.dart';
+import 'package:tarundevindia/ui/home/widgets/contact_me/contact_me.dart';
+import 'package:tarundevindia/ui/home/widgets/my_projects/my_projects.dart';
+import 'package:tarundevindia/ui/home/widgets/my_services/my_services.dart';
+import 'package:tarundevindia/ui/home/widgets/my_skills/my_skills.dart';
+import 'package:tarundevindia/ui/home/widgets/home_welcome.dart';
+import 'package:tarundevindia/ui/home/widgets/sliver_app_bar/home_appbar.dart';
+import 'package:tarundevindia/ui/widgets/bg_container.dart';
 
 import 'widgets/sliver_app_bar/widgets/home_drawer.dart';
 
@@ -28,7 +28,7 @@ class HomeScreen extends HookConsumerWidget {
     return Scaffold(
       endDrawer: drawer,
       resizeToAvoidBottomInset: false,
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.transparent,
       body: Stack(
         children: [
           const HomeSliverListContent(),

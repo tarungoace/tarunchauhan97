@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:personal_website/config/constants/home_items_tags.dart';
-import 'package:personal_website/provider/tagged_list_provider.dart';
+import 'package:tarundevindia/config/constants/home_items_tags.dart';
+import 'package:tarundevindia/provider/tagged_list_provider.dart';
 import '../../../../widgets/animated_underline_text.dart';
 
 class CustomNavigationBar extends HookConsumerWidget {
@@ -25,8 +25,10 @@ class CustomNavigationBar extends HookConsumerWidget {
       kHomeWelcomeItemTag: localization.home,
       kHomeAboutMeItemTag: localization.aboutMe,
       kHomeMySkillsItemTag: localization.skills,
+      kHomeMyProjectsTag : "My Projects",
       kHomeMyServicesTag: localization.services,
       kHomeContactMeItemTag: localization.contact,
+
     };
 
     List<Widget> buildItems() {
