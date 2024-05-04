@@ -48,7 +48,7 @@ class HomeAppBar extends HookConsumerWidget {
     return Theme(
       data: theme.copyWith(
         colorScheme: theme.colorScheme.copyWith(
-          onSurface: onSurfaceColor,
+          onSurface: Colors.black,
         ),
       ),
       child: PhysicalModel(
@@ -57,6 +57,7 @@ class HomeAppBar extends HookConsumerWidget {
         child: Container(
           height: kToolbarHeight,
           padding: screen.contentPadding,
+          color: Colors.black.withOpacity(0.5),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -67,6 +68,7 @@ class HomeAppBar extends HookConsumerWidget {
                   fontFamily: 'SassyFrass',
                   fontWeight: FontWeight.bold,
                   color: onSurfaceColor,
+                  fontSize: 40
                 ),
               ),
               Expanded(

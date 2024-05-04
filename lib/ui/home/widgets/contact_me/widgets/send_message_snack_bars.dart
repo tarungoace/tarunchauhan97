@@ -10,7 +10,7 @@ void showSendMessageSuccessSnackbar(BuildContext context) {
     type: ToastificationType.success,
     style: ToastificationStyle.fillColored,
     title: Text(localization.contactSendMessageSuccessTitle),
-    alignment: Alignment.topLeft,
+    alignment: Alignment.topRight,
     autoCloseDuration: const Duration(seconds: 5),
   );
 }

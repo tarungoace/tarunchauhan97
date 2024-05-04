@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:personal_website/common/responsive/responsive.dart';
+import 'package:personal_website/config/constants/assets_paths.dart';
 import 'package:personal_website/config/constants/home_items_tags.dart';
 import 'package:personal_website/provider/tagged_list_provider.dart';
 import 'package:personal_website/ui/home/widgets/auto_tagged_item.dart';
@@ -27,7 +28,6 @@ class HomeScreen extends HookConsumerWidget {
     return Scaffold(
       endDrawer: drawer,
       resizeToAvoidBottomInset: false,
-
       body: Stack(
         children: [
           const HomeSliverListContent(),
@@ -54,10 +54,24 @@ class HomeSliverListContent extends ConsumerWidget {
             tag: kHomeWelcomeItemTag,
             child: HomeWelcome(),
           ),
-          screen.verticalSpace(30),
-          const AutoTaggedItem(
+          // screen.verticalSpace(30),
+          AutoTaggedItem(
             tag: kHomeAboutMeItemTag,
-            child: AboutMe(),
+            child: Container(
+              height: screen.height,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(
+                    bgWeb,
+
+                  ),
+                  fit: BoxFit.cover,
+                  colorFilter: ColorFilter.mode(
+                      Colors.black.withOpacity(0.5), BlendMode.darken),
+                ),
+              ),
+              child: AboutMe(),
+            ),
           ),
           screen.verticalSpace(15),
           const AutoTaggedItem(

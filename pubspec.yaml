@@ -35,14 +35,15 @@ dependencies:
   animated_text_kit: ^4.2.2
   auto_size_text: ^3.0.0
   cupertino_icons: ^1.0.6
-  flutter_hooks: ^0.20.3
+  flutter_hooks: ^0.20.5
   flutter_svg: ^2.0.9
-  hooks_riverpod: ^2.4.6
-  url_launcher: ^6.2.4
+  hooks_riverpod: ^2.5.1
+  url_launcher: ^6.2.6
   hive_flutter: ^1.1.0
   hive: ^2.2.3
-  http: ^1.1.0
-  toastification: ^1.2.0
+  http: ^1.2.1
+  toastification: ^2.0.0
+  carousel_slider: ^4.2.1
 
 dev_dependencies:
 
@@ -70,6 +71,8 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/profile/
+    - assets/banners/
+    - assets/banners/png/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
