@@ -17,7 +17,10 @@ class TarunDevIndiaApp extends ConsumerWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: createLightTheme(currentLocale),
-      home: const HomeScreen(),
+      home: const SafeArea(
+        child: HomeScreen(),
+      ),
+
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: kSupportedLocales,
       locale: currentLocale,
