@@ -31,12 +31,6 @@ class HomeAppBar extends HookConsumerWidget {
       return null;
     }, const []);
 
-    final onSurfaceColor = Color.lerp(
-      Colors.white,
-      Colors.black,
-      animation.value,
-    )!;
-
     final appbarBackgroundColor = Color.lerp(
       Colors.transparent,
       Colors.white,
@@ -62,14 +56,19 @@ class HomeAppBar extends HookConsumerWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              Image.asset(
+                'assets/icons/devicon.png',
+                fit: BoxFit.contain,
+                width: 35,
+              ),
+              const SizedBox(width: 20),
               Text(
                 "Tarun Singh Chauhan",
                 style: theme.textTheme.headlineLarge!.copyWith(
-                  fontFamily: 'SassyFrass',
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  fontSize: 40
-                ),
+                    fontFamily: 'SassyFrass',
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    fontSize: 40),
               ),
               Expanded(
                 child: Builder(
@@ -82,7 +81,7 @@ class HomeAppBar extends HookConsumerWidget {
                         child: IconButton(
                           onPressed: Scaffold.of(context).openEndDrawer,
                           iconSize: 35,
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.menu,
                             fill: 1,
                             color: Colors.white,

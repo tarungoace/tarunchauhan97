@@ -21,7 +21,7 @@ class AboutMeDescriptions extends ConsumerWidget {
 
     final isSmallScreen = screen.type.isMobile;
     final buttonPadding = EdgeInsets.symmetric(
-      horizontal: screen.fromMTD(20, 25, 40),
+      horizontal: screen.fromMTD(10, 15, 20),
       vertical: screen.fromMTD(10, 15, 15),
     );
     final aboutMeTextAlign = isSmallScreen ? TextAlign.center : TextAlign.start;
@@ -56,6 +56,7 @@ class AboutMeDescriptions extends ConsumerWidget {
         const SizedBox(height: 15),
         Row(
           mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             CustomElevatedButton(
               onPressed: () => launchUrlOnWebBrowser(kMyResumeDownloadUrl),
@@ -67,9 +68,11 @@ class AboutMeDescriptions extends ConsumerWidget {
                 ],
               ),
               borderRadius: BorderRadius.circular(100),
+
               child: Text(localization.downloadResume),
             ),
-            const SizedBox(width: 15),
+            SizedBox(width: 10),
+
             CustomElevatedButton(
               onPressed: () =>
                   ref.read(taggedListNotifierProvider.notifier).animateToTag(kHomeContactMeItemTag),
@@ -81,6 +84,7 @@ class AboutMeDescriptions extends ConsumerWidget {
                   theme.primaryColorDark,
                 ],
               ),
+              padding: buttonPadding,
               borderSide: BorderSide(
                 color: theme.primaryColor,
               ),
