@@ -26,13 +26,14 @@ class BGContainer extends StatelessWidget {
     return Container(
       height: height,
       width: width,
-      margin: margin,
+      margin: margin ?? EdgeInsets.zero,
       padding: padding ??
           const EdgeInsets.only(
             top: 50,
             bottom: 50,
           ),
       alignment: Alignment.center,
+
       decoration:  BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.centerLeft,
@@ -41,6 +42,7 @@ class BGContainer extends StatelessWidget {
             AppColors.onlyBlue,
             AppColors.darkBlue,
           ],
+
         ),
         // image: DecorationImage(
         //   image: const AssetImage(

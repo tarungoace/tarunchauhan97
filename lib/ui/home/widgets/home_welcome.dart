@@ -11,6 +11,7 @@ import 'package:tarundevindia/config/theme/app_colors.dart';
 import 'package:tarundevindia/config/theme/text_theme.dart';
 import 'package:tarundevindia/provider/tagged_list_provider.dart';
 import 'package:tarundevindia/provider/url_handler.dart';
+import 'package:tarundevindia/ui/widgets/bg_container.dart';
 import 'package:tarundevindia/ui/widgets/custom_elevated_button.dart';
 import 'package:tarundevindia/ui/widgets/home_carousal.dart';
 
@@ -20,132 +21,243 @@ class HomeWelcome extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
+    final screen = WebsiteScreen.of(context);
 
     return Theme(
       data: theme.copyWith(
         textTheme: theme.textTheme.merge(getWhiteTextTheme),
       ),
-      child: Builder(
-        builder: (context) {
-          final theme = Theme.of(context);
-          final screen = WebsiteScreen.of(context);
-          final localization = AppLocalizations.of(context)!;
+      child: Container(
+        height: screen.type.isMobile ? screen.height : null,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              theme.primaryColorDark,
+              theme.primaryColorLight,
+            ],
+          ),
+        ),
+        child: Column(
+          children: [
+            screen.type.isMobile
+                ? const SizedBox(height: 80)
+                : const SizedBox(
+                    height: 25,
+                  ),
+            screen.type.isMobile ? const HomeCarousal() : const SizedBox(),
+            const SizedBox(height: 25),
+            Builder(
+              builder: (context) {
+                final theme = Theme.of(context);
+                final localization = AppLocalizations.of(context)!;
 
-          return Stack(
-            children: [
-              const HomeCarousal(),
-              Positioned(
-                top: 50,
-                child: Container(
-                  height: screen.height + 50,
-                  width: screen.width,
-                  // decoration: const BoxDecoration(
-                  //   image: DecorationImage(
-                  //     image: AssetImage(kHomeBackgroundImagePath),
-                  //     fit: BoxFit.cover,
-                  //   ),
-                  // ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      // Text(
-                      //   localization.homeWelcome,
-                      //   style: screen.fromMTD(
-                      //     theme.textTheme.titleLarge,
-                      //     theme.textTheme.headlineSmall,
-                      //     theme.textTheme.headlineMedium,
-                      //   ),
-                      // ),
-                      CircleAvatar(
-                        backgroundImage: AssetImage(
-                          'assets/profile/me1.JPG',
-                        ),
-                        radius: screen.fromMTD(120, 150, 180),
-                        // child: Image.asset(
-                        //   'assets/profile/me1.JPG',
-                        //   height: 300,
-                        //   width: 300,
-                        //   fit: BoxFit.fill,
-                        // ),
-                      ),
-
-                      const SizedBox(height: 20),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 20),
-                        child: FittedBox(
-                          child: Text(
-                            "Tarun Singh Chauhan",
-                            style: screen.fromMTD(
-                              theme.textTheme.headlineMedium,
-                              theme.textTheme.displaySmall,
-                              theme.textTheme.displayMedium,
+                return screen.type.isMobile
+                    ? Column(
+                        children: [
+                          const CircleAvatar(
+                            backgroundImage: AssetImage(
+                              'assets/profile/me1.JPG',
+                            ),
+                            radius: 120,
+                            // child: Image.asset(
+                            //   'assets/profile/me1.JPG',
+                            //   height: 300,
+                            //   width: 300,
+                            //   fit: BoxFit.fill,
+                            // ),
+                          ),
+                          const SizedBox(height: 20),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 20),
+                            child: FittedBox(
+                              child: Text(
+                                "Tarun Singh Chauhan",
+                                style: screen.fromMTD(
+                                  theme.textTheme.headlineMedium,
+                                  theme.textTheme.displaySmall,
+                                  theme.textTheme.displayMedium,
+                                ),
+                              ),
                             ),
                           ),
-                        ),
-                      ),
-                      const SizedBox(height: 40),
-                      Text(
-                        localization.homeJobTitle,
-                        style: screen.fromMTD(
-                          theme.textTheme.titleLarge,
-                          theme.textTheme.headlineSmall,
-                          theme.textTheme.headlineMedium,
-                        ),
-                      ),
-                      const SizedBox(height: 20),
-                      CustomElevatedButton(
-                        onPressed: () => ref
-                            .read(taggedListNotifierProvider.notifier)
-                            .animateToTag(kHomeContactMeItemTag),
-                        borderRadius: BorderRadius.circular(100),
-                        borderSide: BorderSide(
-                          color: theme.primaryColor,
-                        ),
-                        foregroundColor: theme.primaryColorLight,
-                        backgroundColor: theme.primaryColorDark,
-                        gradientBackground: LinearGradient(
-                          colors: [
-                            theme.primaryColorLight,
-                            theme.primaryColorDark,
-                          ],
-                        ),
-                        elevation: 0,
-                        child: Text(
-                          localization.hireMe,
-                          style: TextStyle(
-                            color: Colors.white,
+                          const SizedBox(height: 40),
+                          Text(
+                            localization.homeJobTitle,
+                            style: screen.fromMTD(
+                              theme.textTheme.titleLarge,
+                              theme.textTheme.headlineSmall,
+                              theme.textTheme.headlineMedium,
+                            ),
                           ),
-                        ),
-                      ),
-                      const SizedBox(height: 60),
-                      const Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          _CircularLinkButton(
-                            link: kMyTelegramUrl,
-                            svgPath: kTelegramSvgPath,
+                          const SizedBox(height: 20),
+                          CustomElevatedButton(
+                            onPressed: () => ref
+                                .read(taggedListNotifierProvider.notifier)
+                                .animateToTag(kHomeContactMeItemTag),
+                            borderRadius: BorderRadius.circular(100),
+                            borderSide: BorderSide(
+                              color: theme.primaryColor,
+                            ),
+                            foregroundColor: theme.primaryColorLight,
+                            backgroundColor: theme.primaryColorDark,
+                            gradientBackground: LinearGradient(
+                              colors: [
+                                theme.primaryColorLight,
+                                theme.primaryColorDark,
+                              ],
+                            ),
+                            elevation: 0,
+                            child: Text(
+                              localization.hireMe,
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
                           ),
-                          _CircularLinkButton(
-                            link: kMyGithubUrl,
-                            svgPath: kGithubSvgPath,
-                          ),
-                          _CircularLinkButton(
-                            link: kMyLinkedinUrl,
-                            svgPath: kLinkedinSvgPath,
-                          ),
-                          _CircularLinkButton(
-                            link: kMyInstagramUrl,
-                            svgPath: kInstagramSvgPath,
+                          const SizedBox(height: 60),
+                          const Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              _CircularLinkButton(
+                                link: kMyTelegramUrl,
+                                svgPath: kTelegramSvgPath,
+                              ),
+                              _CircularLinkButton(
+                                link: kMyGithubUrl,
+                                svgPath: kGithubSvgPath,
+                              ),
+                              _CircularLinkButton(
+                                link: kMyLinkedinUrl,
+                                svgPath: kLinkedinSvgPath,
+                              ),
+                              _CircularLinkButton(
+                                link: kMyInstagramUrl,
+                                svgPath: kInstagramSvgPath,
+                              ),
+                            ],
                           ),
                         ],
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ],
-          );
-        },
+                      )
+                    : Stack(
+                        children: [
+                          const HomeCarousal(),
+                          Positioned(
+                            top: screen.fromMTD(10, 100, 50),
+                            child: SizedBox(
+                              height: screen.height + 50,
+                              width: screen.width,
+                              // decoration: const BoxDecoration(
+                              //   image: DecorationImage(
+                              //     image: AssetImage(kHomeBackgroundImagePath),
+                              //     fit: BoxFit.cover,
+                              //   ),
+                              // ),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  // Text(
+                                  //   localization.homeWelcome,
+                                  //   style: screen.fromMTD(
+                                  //     theme.textTheme.titleLarge,
+                                  //     theme.textTheme.headlineSmall,
+                                  //     theme.textTheme.headlineMedium,
+                                  //   ),
+                                  // ),
+                                  CircleAvatar(
+                                    backgroundImage: AssetImage(
+                                      'assets/profile/me1.JPG',
+                                    ),
+                                    radius: screen.fromMTD(120, 150, 180),
+                                    // child: Image.asset(
+                                    //   'assets/profile/me1.JPG',
+                                    //   height: 300,
+                                    //   width: 300,
+                                    //   fit: BoxFit.fill,
+                                    // ),
+                                  ),
+
+                                  const SizedBox(height: 20),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 20),
+                                    child: FittedBox(
+                                      child: Text(
+                                        "Tarun Singh Chauhan",
+                                        style: screen.fromMTD(
+                                          theme.textTheme.headlineMedium,
+                                          theme.textTheme.displaySmall,
+                                          theme.textTheme.displayMedium,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 40),
+                                  Text(
+                                    localization.homeJobTitle,
+                                    style: screen.fromMTD(
+                                      theme.textTheme.titleLarge,
+                                      theme.textTheme.headlineSmall,
+                                      theme.textTheme.headlineMedium,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 20),
+                                  CustomElevatedButton(
+                                    onPressed: () => ref
+                                        .read(
+                                            taggedListNotifierProvider.notifier)
+                                        .animateToTag(kHomeContactMeItemTag),
+                                    borderRadius: BorderRadius.circular(100),
+                                    borderSide: BorderSide(
+                                      color: theme.primaryColor,
+                                    ),
+                                    foregroundColor: theme.primaryColorLight,
+                                    backgroundColor: theme.primaryColorDark,
+                                    gradientBackground: LinearGradient(
+                                      colors: [
+                                        theme.primaryColorLight,
+                                        theme.primaryColorDark,
+                                      ],
+                                    ),
+                                    elevation: 0,
+                                    child: Text(
+                                      localization.hireMe,
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 60),
+                                  const Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      _CircularLinkButton(
+                                        link: kMyTelegramUrl,
+                                        svgPath: kTelegramSvgPath,
+                                      ),
+                                      _CircularLinkButton(
+                                        link: kMyGithubUrl,
+                                        svgPath: kGithubSvgPath,
+                                      ),
+                                      _CircularLinkButton(
+                                        link: kMyLinkedinUrl,
+                                        svgPath: kLinkedinSvgPath,
+                                      ),
+                                      _CircularLinkButton(
+                                        link: kMyInstagramUrl,
+                                        svgPath: kInstagramSvgPath,
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      );
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
