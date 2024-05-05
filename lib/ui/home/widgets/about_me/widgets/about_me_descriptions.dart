@@ -85,7 +85,7 @@ class AboutMeDescriptions extends ConsumerWidget {
                 color: theme.primaryColor,
               ),
               borderRadius: BorderRadius.circular(100),
-              child: Text(localization.hireMe),
+              child: Text(localization.messageMe),
             ),
           ],
         ),

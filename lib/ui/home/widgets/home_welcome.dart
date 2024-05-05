@@ -28,7 +28,7 @@ class HomeWelcome extends ConsumerWidget {
         textTheme: theme.textTheme.merge(getWhiteTextTheme),
       ),
       child: Container(
-        height: screen.type.isMobile ? screen.height : null,
+        height: screen.type.isMobile ? screen.height + 40 : null,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
@@ -108,7 +108,7 @@ class HomeWelcome extends ConsumerWidget {
                             ),
                             elevation: 0,
                             child: Text(
-                              localization.hireMe,
+                              localization.messageMe,
                               style: TextStyle(
                                 color: Colors.white,
                               ),
@@ -220,7 +220,7 @@ class HomeWelcome extends ConsumerWidget {
                                     ),
                                     elevation: 0,
                                     child: Text(
-                                      localization.hireMe,
+                                      localization.messageMe,
                                       style: TextStyle(
                                         color: Colors.white,
                                       ),
