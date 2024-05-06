@@ -4,7 +4,7 @@
 
 
 # 💫 About Me:
-⦿ 🔭 I’m Mobile App Developer with Skills in **FLUTTER FRAMEWORK**<br><br> ⦿ 🌱 I’m currently learning **backend**<br><br> ⦿ 💬 Ask me about **Flutter,Dart,Swift,Kotlin,Nodejs**<br><br> ⦿ 📫 How to reach me **chauhan.tarun897@gmail.com**<br><br> ⦿ ⚡ Fun fact **I am funny**
+⦿ 🔭 I’m Mobile App Developer with Skills in **FLUTTER FRAMEWORK**<br><br> ⦿ 🌱 I’m currently learning **backend**<br><br> ⦿ 💬 Ask me about **Flutter,Dart,Swift,Kotlin,Nodejs**<br><br> ⦿ 📫 How to reach me **chauhan.tarun897@gmail.com**<br><br>
 
 
 ## Get in Touch
