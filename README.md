@@ -9,8 +9,8 @@
 
 ## Get in Touch
 - Website: https://tarundevindia.web.app/
-- LinkedIn: [Your LinkedIn Profile](linkedin.com/in/tarun-singh-chauhan-61021a1b1)
-- Twitter: [@YourTwitterHandle](https://twitter.com/chauhan_tarun97)
+- LinkedIn: (linkedin.com/in/tarun-singh-chauhan-61021a1b1)
+- Twitter: (https://twitter.com/chauhan_tarun97)
 - Email: chauhan.tarun897@gmail.com / chauhan.tarun897@hotmail.com 
 
 # 💻 Tech Stack:
