@@ -1,7 +1,8 @@
 <h1 align="center">Hi 👋, I'm Tarun Singh Chauhan</h1>
 <h3 align="center">A passionate Mobile Application Developer from Gurgaon, Haryana, India.</h3>
-<img align="right" alt="Coding" width="400" src="https://dribbble.com/shots/21107147-GIF-animation?utm_source=Clipboard_Shot&utm_campaign=OleksandrKor&utm_content=GIF%20animation&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=OleksandrKor&utm_content=GIF%20animation&utm_medium=Social_Share">
+<img align="right" alt="Coding" width="400" src="https://github.com/tarunchauhan97/tarunchauhan97/assets/30916033/4abd9f8c-167e-4529-8f13-237e5d6553c7">
 
+![original-1e15ac48305378a87fc4997b2ad4c0ee](https://github.com/tarunchauhan97/tarunchauhan97/assets/30916033/4abd9f8c-167e-4529-8f13-237e5d6553c7)
 
 
 
