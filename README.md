@@ -2,12 +2,6 @@
 <h3 align="center">A passionate Mobile Application Developer from Gurgaon, Haryana, India.</h3>
 <img align="right" alt="Coding" width="400" src="https://github.com/tarunchauhan97/tarunchauhan97/assets/30916033/4abd9f8c-167e-4529-8f13-237e5d6553c7">
 
-![original-1e15ac48305378a87fc4997b2ad4c0ee](https://github.com/tarunchauhan97/tarunchauhan97/assets/30916033/4abd9f8c-167e-4529-8f13-237e5d6553c7)
-
-
-
-
-
 
 # 💫 About Me:
 ⦿ 🔭 I’m Mobile App Developer with Skills in **FLUTTER FRAMEWORK**<br><br> ⦿ 🌱 I’m currently learning **backend**<br><br> ⦿ 💬 Ask me about **Flutter,Dart,Swift,Kotlin,Nodejs**<br><br> ⦿ 📫 How to reach me **chauhan.tarun897@gmail.com**<br><br>
