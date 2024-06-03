@@ -11,6 +11,7 @@ class BGContainer extends StatelessWidget {
     this.height,
     this.padding,
     this.margin,
+    this.borderRadius,
   });
 
   final Widget? child;
@@ -18,6 +19,7 @@ class BGContainer extends StatelessWidget {
   final double? height;
   final EdgeInsets? padding;
   final EdgeInsets? margin;
+  final BorderRadiusGeometry? borderRadius;
 
   @override
   Widget build(BuildContext context) {
@@ -33,8 +35,7 @@ class BGContainer extends StatelessWidget {
             bottom: 50,
           ),
       alignment: Alignment.center,
-
-      decoration:  BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
@@ -42,8 +43,10 @@ class BGContainer extends StatelessWidget {
             AppColors.onlyBlue,
             AppColors.darkBlue,
           ],
-
         ),
+
+        borderRadius: borderRadius ?? BorderRadius.zero,
+
         // image: DecorationImage(
         //   image: const AssetImage(
         //     bgWeb,

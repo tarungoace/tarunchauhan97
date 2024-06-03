@@ -24,11 +24,11 @@ class CustomNavigationBar extends HookConsumerWidget {
     final items = {
       kHomeWelcomeItemTag: localization.home,
       kHomeAboutMeItemTag: localization.aboutMe,
+      kMyExperienceTag: "Experience",
       kHomeMySkillsItemTag: localization.skills,
-      kHomeMyProjectsTag : "My Projects",
+      kHomeMyProjectsTag: "Projects",
       kHomeMyServicesTag: localization.services,
       kHomeContactMeItemTag: localization.contact,
-
     };
 
     List<Widget> buildItems() {
@@ -39,7 +39,9 @@ class CustomNavigationBar extends HookConsumerWidget {
               text: items[key]!,
               isSelected: selectedTag == key,
               onTap: () {
-                ref.watch(taggedListNotifierProvider.notifier).animateToTag(key);
+                ref
+                    .watch(taggedListNotifierProvider.notifier)
+                    .animateToTag(key);
                 onChange?.call(key);
               },
             ),
@@ -92,7 +94,6 @@ class NavigationItem extends HookWidget {
             duration: const Duration(milliseconds: 250),
             text: text,
             isSelected: isSelectedState.value,
-
           ),
         ),
       ),

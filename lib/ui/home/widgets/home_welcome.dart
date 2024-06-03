@@ -144,7 +144,7 @@ class HomeWelcome extends ConsumerWidget {
                           Positioned(
                             top: screen.fromMTD(10, 100, 50),
                             child: SizedBox(
-                              height: screen.height + 50,
+                              height: screen.height + 44,
                               width: screen.width,
                               // decoration: const BoxDecoration(
                               //   image: DecorationImage(
@@ -164,7 +164,7 @@ class HomeWelcome extends ConsumerWidget {
                                   //   ),
                                   // ),
                                   CircleAvatar(
-                                    backgroundImage: AssetImage(
+                                    backgroundImage: const AssetImage(
                                       'assets/profile/me1.JPG',
                                     ),
                                     radius: screen.fromMTD(120, 150, 180),

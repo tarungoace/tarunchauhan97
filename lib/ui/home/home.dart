@@ -6,6 +6,7 @@ import 'package:tarundevindia/provider/tagged_list_provider.dart';
 import 'package:tarundevindia/ui/home/widgets/auto_tagged_item.dart';
 import 'package:tarundevindia/ui/home/widgets/about_me/about_me.dart';
 import 'package:tarundevindia/ui/home/widgets/contact_me/contact_me.dart';
+import 'package:tarundevindia/ui/home/widgets/my_experience/my_experience.dart';
 import 'package:tarundevindia/ui/home/widgets/my_projects/my_projects.dart';
 import 'package:tarundevindia/ui/home/widgets/my_services/my_services.dart';
 import 'package:tarundevindia/ui/home/widgets/my_skills/my_skills.dart';
@@ -48,42 +49,48 @@ class HomeSliverListContent extends ConsumerWidget {
 
     return SingleChildScrollView(
       controller: ref.watch(homeScrollControllerProvider),
-      child: Column(
+      child: const Column(
         children: [
-          const TaggedBarWidget(
+          TaggedBarWidget(
             tag: kHomeWelcomeItemTag,
             child: HomeWelcome(),
           ),
           // screen.verticalSpace(30),
-          const TaggedBarWidget(
+          TaggedBarWidget(
             tag: kHomeAboutMeItemTag,
             child: BGContainer(
               child: AboutMe(),
             ),
           ),
+          TaggedBarWidget(
+            tag: kMyExperienceTag,
+            child: BGContainer(
+              child: MyExperience(),
+            ),
+          ),
           // screen.verticalSpace(15),
-          const TaggedBarWidget(
+          TaggedBarWidget(
             tag: kHomeMySkillsItemTag,
             child: BGContainer(
               child: MySkills(),
             ),
           ),
           // screen.verticalSpace(30),
-          const TaggedBarWidget(
+          TaggedBarWidget(
             tag: kHomeMyProjectsTag,
             child: BGContainer(
               child: MyProjectsData(),
             ),
           ),
           // screen.verticalSpace(30),
-          const TaggedBarWidget(
+          TaggedBarWidget(
             tag: kHomeMyServicesTag,
             child: BGContainer(
               child: MyServices(),
             ),
           ),
           // screen.verticalSpace(30),
-          const TaggedBarWidget(
+          TaggedBarWidget(
             tag: kHomeContactMeItemTag,
             child: BGContainer(
               child: ContactMe(),
