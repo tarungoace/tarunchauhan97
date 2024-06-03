@@ -72,7 +72,7 @@ class HomeWelcome extends ConsumerWidget {
                               ),
                             ),
                           ),
-                          const SizedBox(height: 40),
+                          const SizedBox(height: 20),
                           Text(
                             localization.homeJobTitle,
                             style: screen.fromMTD(
@@ -80,6 +80,7 @@ class HomeWelcome extends ConsumerWidget {
                               theme.textTheme.headlineSmall,
                               theme.textTheme.headlineMedium,
                             ),
+                            textAlign: TextAlign.center,
                           ),
                           const SizedBox(height: 20),
                           CustomElevatedButton(

@@ -36,6 +36,8 @@ class _MyExperienceState extends State<MyExperience> {
     final theme = Theme.of(context);
     final screen = WebsiteScreen.of(context);
 
+    final isMobileScreen = screen.type.isMobile;
+
     return Column(
       children: [
         const SizedBox(height: 20),
@@ -48,14 +50,14 @@ class _MyExperienceState extends State<MyExperience> {
         const SizedBox(height: 50),
         Container(
           height: screen.fromMTD(
-            MediaQuery.of(context).size.height * .50,
-            MediaQuery.of(context).size.height * .50,
-            MediaQuery.of(context).size.height * .50,
+            MediaQuery.of(context).size.height * .35,
+            MediaQuery.of(context).size.height * .45,
+            MediaQuery.of(context).size.height * .45,
           ),
           width: MediaQuery.of(context).size.width * .90,
           padding: screen.contentPadding.copyWith(
             right: screen.fromMTD(5, 5, 10),
-            left: screen.fromMTD(5, 5, 40),
+            left: screen.fromMTD(5, 5, 90),
           ),
           child: ListView.builder(
             itemCount: listExperience.length,
