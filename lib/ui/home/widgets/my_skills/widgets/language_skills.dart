@@ -20,7 +20,7 @@ class LanguageSkills extends StatelessWidget {
       description: localization.languageSkillsDescription,
       child: Row(
         children: [
-          Expanded(
+          const Expanded(
             child: LanguageSkill(
               name: "Hindi",
               icon: kIndiaFlagRoundedSvgPath,
