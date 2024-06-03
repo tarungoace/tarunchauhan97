@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -11,7 +10,6 @@ import 'package:tarundevindia/config/theme/app_colors.dart';
 import 'package:tarundevindia/config/theme/text_theme.dart';
 import 'package:tarundevindia/provider/tagged_list_provider.dart';
 import 'package:tarundevindia/provider/url_handler.dart';
-import 'package:tarundevindia/ui/widgets/bg_container.dart';
 import 'package:tarundevindia/ui/widgets/custom_elevated_button.dart';
 import 'package:tarundevindia/ui/widgets/home_carousal.dart';
 
@@ -59,12 +57,6 @@ class HomeWelcome extends ConsumerWidget {
                               'assets/profile/me1.JPG',
                             ),
                             radius: 120,
-                            // child: Image.asset(
-                            //   'assets/profile/me1.JPG',
-                            //   height: 300,
-                            //   width: 300,
-                            //   fit: BoxFit.fill,
-                            // ),
                           ),
                           const SizedBox(height: 20),
                           Padding(
@@ -109,7 +101,7 @@ class HomeWelcome extends ConsumerWidget {
                             elevation: 0,
                             child: Text(
                               localization.messageMe,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.white,
                               ),
                             ),
@@ -146,36 +138,15 @@ class HomeWelcome extends ConsumerWidget {
                             child: SizedBox(
                               height: screen.height + 44,
                               width: screen.width,
-                              // decoration: const BoxDecoration(
-                              //   image: DecorationImage(
-                              //     image: AssetImage(kHomeBackgroundImagePath),
-                              //     fit: BoxFit.cover,
-                              //   ),
-                              // ),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  // Text(
-                                  //   localization.homeWelcome,
-                                  //   style: screen.fromMTD(
-                                  //     theme.textTheme.titleLarge,
-                                  //     theme.textTheme.headlineSmall,
-                                  //     theme.textTheme.headlineMedium,
-                                  //   ),
-                                  // ),
                                   CircleAvatar(
                                     backgroundImage: const AssetImage(
                                       'assets/profile/me1.JPG',
                                     ),
                                     radius: screen.fromMTD(120, 150, 180),
-                                    // child: Image.asset(
-                                    //   'assets/profile/me1.JPG',
-                                    //   height: 300,
-                                    //   width: 300,
-                                    //   fit: BoxFit.fill,
-                                    // ),
                                   ),
-
                                   const SizedBox(height: 20),
                                   Padding(
                                     padding: const EdgeInsets.symmetric(
@@ -221,7 +192,7 @@ class HomeWelcome extends ConsumerWidget {
                                     elevation: 0,
                                     child: Text(
                                       localization.messageMe,
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                         color: Colors.white,
                                       ),
                                     ),

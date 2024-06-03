@@ -1,8 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:tarundevindia/common/responsive/responsive.dart';
-import 'package:tarundevindia/config/theme/app_colors.dart';
 import 'package:tarundevindia/data/my_experience_data.dart';
 import 'package:tarundevindia/ui/widgets/bg_container.dart';
 
@@ -29,7 +26,6 @@ class _MyExperienceState extends State<MyExperience> {
 
   @override
   void didChangeDependencies() {
-    // TODO: implement didChangeDependencies
     super.didChangeDependencies();
     setState(() {});
   }
@@ -38,8 +34,6 @@ class _MyExperienceState extends State<MyExperience> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final screen = WebsiteScreen.of(context);
-
-    final isSmallScreen = screen.type.isMobile || screen.type.isSmallTablet;
 
     return Column(
       children: [

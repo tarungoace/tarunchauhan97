@@ -45,8 +45,6 @@ class HomeSliverListContent extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final screen = WebsiteScreen.of(context);
-
     return SingleChildScrollView(
       controller: ref.watch(homeScrollControllerProvider),
       child: const Column(

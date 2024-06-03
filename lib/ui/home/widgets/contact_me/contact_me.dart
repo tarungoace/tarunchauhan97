@@ -79,10 +79,8 @@ class ContactMeTitle extends StatelessWidget {
           child: Text(
             localization.contactDescription,
             textAlign: TextAlign.center,
-            style: theme.textTheme.titleLarge!.copyWith(
-              fontWeight: FontWeight.w300,
-              color: Colors.white
-            ),
+            style: theme.textTheme.titleLarge!
+                .copyWith(fontWeight: FontWeight.w300, color: Colors.white),
           ),
         ),
       ],
