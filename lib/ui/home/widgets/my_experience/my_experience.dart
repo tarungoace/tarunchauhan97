@@ -71,7 +71,7 @@ class _MyExperienceState extends State<MyExperience> {
                 margin: const EdgeInsets.only(right: 80),
                 padding: EdgeInsets.symmetric(
                   horizontal: screen.fromMTD(20, 30, 40),
-                  vertical: screen.fromMTD(30, 30, 40),
+                  vertical: screen.fromMTD(10, 10, 20),
                 ),
                 // const EdgeInsets.only(top: 40, left: 30, right: 30, bottom: 10),
                 borderRadius: BorderRadius.circular(40),
