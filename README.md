@@ -7,6 +7,14 @@
 ⦿ 🔭 I am Mobile App Developer with Skills in **FLUTTER FRAMEWORK**<br><br> ⦿ 🌱 I’m currently learning **backend** Nodejs<br><br> ⦿ 💬 Ask me about **Flutter, Dart, Swift, Kotlin, Nodejs**<br><br> ⦿ 📫 How to reach me **chauhan.tarun897@gmail.com**<br><br><br><br>
 
 
+<br>
+## Get in Touch
+- Website:  https://tarundevindia.web.app/
+- LinkedIn: https://www.linkedin.com/in/tarun-singh-c-61021a1b1/
+- Twitter:  https://twitter.com/chauhan_tarun97
+- Email:    chauhan.tarun897@gmail.com / chauhan.tarun897@hotmail.com 
+<br>
+
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/https://www.instagram.com/chauhan.tarun897/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/tarun-singh-c-61021a1b1/) 
 
@@ -48,14 +56,6 @@
 
 # 💫 About Me:
 ⦿ 🔭 I am Mobile App Developer with Skills in **FLUTTER FRAMEWORK**<br><br> ⦿ 🌱 I’m currently learning **backend**<br><br> ⦿ 💬 Ask me about **Flutter, Dart, Swift, Kotlin, Nodejs**<br><br> ⦿ 📫 How to reach me **chauhan.tarun897@gmail.com**<br><br>
-
-
-
-## Get in Touch
-- Website:  https://tarundevindia.web.app/
-- LinkedIn: https://www.linkedin.com/in/tarun-singh-c-61021a1b1/
-- Twitter:  https://twitter.com/chauhan_tarun97
-- Email:    chauhan.tarun897@gmail.com / chauhan.tarun897@hotmail.com 
 
 
 
