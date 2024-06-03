@@ -26,13 +26,15 @@ List<Map<String, dynamic>> myExperiencedata = [
     'jobProfile': 'Flutter Developer',
     'ofcaddress': 'Gurgaon',
     'workdone': '''
-Integrating MOEngage SDK for Event tracking, Push Notification, InApps
-• Enabling Deep linking & user event tracking with Branch SDK Integration
+Integrating MOEngage SDK for Event tracking, Push Notification, InApps.
+• Rolled out IOS app on App Store/ Fixed IOS Permission Issues.
+• Enabling Deep linking & user event tracking with Branch SDK Integration.
 • Unbxd API for Auto Suggest, Searching, Filtering, Events Tracking.
 • Firebase Crashlytics & events Integration, Santry SDK app issues.
-• Building Shop page, Product banners, OTP login flow, Enhancing user \n Experience, Zoom images, Cached image & Video Player
+• Building Shop page, Product banners, OTP login flow, Enhancing user \n Experience, Zoom images, Cached image & Video Player.
 • Bug fixes, App optimization rolling-out app updates.
-• Rolled out IOS app on App Store/ Fixed IOS Permission Issues
+• Auto SMS Reader, Android IOS Permission additions.
+
 ''',
   },
   {
@@ -48,7 +50,6 @@ Craft Silicon Loan Banking (South African Bank)
 • Integrating Karza, Udyam, Ministry of Corporate Affair’s SDK.
 • Custom Generics Reusable Widgets for Customer and Agent Application.
 • Using Geo-Locator, Firebase-Crashlytics, JWT Decode, Pin Put Package.
-• Supported App-Localization, Responsive UI with Screen Util. 
 
 KisanKonnect - E-Commerce
 • E-Commerce Solution with Stripe Payment Gateway Integration.

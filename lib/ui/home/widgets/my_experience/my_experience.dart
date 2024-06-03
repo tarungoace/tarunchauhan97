@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:tarundevindia/common/responsive/responsive.dart';
 import 'package:tarundevindia/config/theme/app_colors.dart';
 import 'package:tarundevindia/data/my_experience_data.dart';
+import 'package:tarundevindia/ui/widgets/animated_title_text.dart';
 import 'package:tarundevindia/ui/widgets/bg_container.dart';
 
 class MyExperience extends StatefulWidget {
@@ -44,28 +45,23 @@ class _MyExperienceState extends State<MyExperience> {
     return Column(
       children: [
         const SizedBox(height: 20),
-        Align(
+        const Align(
           alignment: Alignment.center,
-          child: Text(
-            "My Experiences ",
-            style: theme.textTheme.headlineLarge!.copyWith(
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-            ),
-            textAlign: TextAlign.center,
+          child: AnimatedTitleText(
+            title: "Experiences",
           ),
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: 50),
         Container(
           height: screen.fromMTD(
-            MediaQuery.of(context).size.height * .40,
-            MediaQuery.of(context).size.height * .40,
-            MediaQuery.of(context).size.height * .40,
+            MediaQuery.of(context).size.height * .50,
+            MediaQuery.of(context).size.height * .50,
+            MediaQuery.of(context).size.height * .50,
           ),
           width: MediaQuery.of(context).size.width * .90,
           padding: screen.contentPadding.copyWith(
             right: screen.fromMTD(5, 5, 10),
-            left: screen.fromMTD(5, 5, 70),
+            left: screen.fromMTD(5, 5, 40),
           ),
           child: ListView.builder(
             itemCount: listExperience.length,
