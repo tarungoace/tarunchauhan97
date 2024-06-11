@@ -34,7 +34,6 @@ Integrating MOEngage SDK for Event tracking, Push Notification, InApps.
 • Building Shop page, Product banners, OTP login flow, Enhancing user \n Experience, Zoom images, Cached image & Video Player.
 • Bug fixes, App optimization rolling-out app updates.
 • Auto SMS Reader, Android IOS Permission additions.
-
 ''',
   },
   {
@@ -65,7 +64,13 @@ Card Byte: e-Visiting Business Card App.
 • Worked on QR Scanner implementation with TOTP Algorithm. 
 • Writing Test cases for Dynamic Link and Bloc Pattern.
 • Worked with Json Serializable, Freezed, GIT Clone Packages.
-
+''',
+  },
+  {
+    "companyname": 'Nuestack Technologies',
+    "jobProfile": 'Flutter Developer',
+    "ofcaddress": 'Gurgaon',
+    "workdone": '''
 Tatsam: Therapy & Self Care
 • Used Carousel, GetIT, Hive, Smartlook, Secure Storage Packages.
 • Audio, Video, App Localization, Flutter Env Flavors Support.
@@ -74,6 +79,9 @@ Save Max - Real Estate Canada
 • Firebase Dynamic Linking Sharing Properties with Short URL.
 • Used Google Maps to locate Canada properties with Pop-up details.
 
+Drona Learning -  Digital Tutorial
+• Developed UI from scratch and Integated firebase
+• Worked to built quiz functionality and Video audio lectures.
 ''',
   },
 ];
