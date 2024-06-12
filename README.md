@@ -4,7 +4,7 @@
 
 # 💫 About Me:
 <img align="right" alt="Coding" width="400" src="https://github.com/tarunchauhan97/tarunchauhan97/assets/30916033/4abd9f8c-167e-4529-8f13-237e5d6553c7">
-⦿ 🔭 I am Mobile App Developer with Skills in **FLUTTER FRAMEWORK**<br><br> ⦿ 🌱 I’m currently learning **backend** Nodejs<br><br> ⦿ 💬 Ask me about **Flutter, Dart, Swift, Kotlin, Nodejs**<br><br> ⦿ 📫 How to reach me **chauhan.tarun897@gmail.com**<br><br><br><br><br><br>
+⦿ 🔭 I am Mobile App Developer with Skills in **FLUTTER FRAMEWORK**<br><br> ⦿ 🌱 I’m currently learning **backend** Nodejs<br><br> ⦿ 💬 Ask me about **Flutter, Dart, Swift, Kotlin, Nodejs**<br><br> ⦿ 📫 How to reach me **chauhan.tarun897@gmail.com**<br><br><br><br><br><br><br>
 
 
 
