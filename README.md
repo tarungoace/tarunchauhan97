@@ -12,7 +12,8 @@
 - Website:  https://tarundevindia.web.app/
 - LinkedIn: https://www.linkedin.com/in/tarun-singh-c-61021a1b1/
 - Twitter:  https://twitter.com/chauhan_tarun97
-- Email:    chauhan.tarun897@gmail.com / chauhan.tarun897@hotmail.com 
+- Email:    chauhan.tarun897@gmail.com / chauhan.tarun897@hotmail.com
+- Resume:   https://firebasestorage.googleapis.com/v0/b/tarundevindia.appspot.com/o/tarun_resume2406.pdf?alt=media&token=df0260cd-d888-4f9f-a8c6-c3650bc4425f
 
 
 
