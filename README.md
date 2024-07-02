@@ -1,5 +1,5 @@
 <h1 align="center">Hi I'm Tarun Singh Chauhan</h1>
-<h3 align="center">A passionate Mobile Application Developer from Gurgaon, India.</h3>
+<h3 align="center">A passionate Software Engineer with Skill in Mobile Application Development Residing in Gurgaon, India.</h3>
 
 
 # 💫 About Me:
