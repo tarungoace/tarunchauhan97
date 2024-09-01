@@ -14,7 +14,6 @@
 
 
 
-
 ## Get in Touch
 - Website:  https://tarundevindia.web.app/
 - LinkedIn: https://www.linkedin.com/in/tarun-singh-c-61021a1b1/
