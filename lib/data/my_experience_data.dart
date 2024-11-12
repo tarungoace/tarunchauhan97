@@ -67,7 +67,7 @@ Card Byte: e-Visiting Business Card App.
 ''',
   },
   {
-    "companyname": 'Nuestack Technologies',
+    "companyname": 'Neustack Solutions',
     "jobProfile": 'Flutter Developer',
     "ofcaddress": 'Gurgaon',
     "workdone": '''
