@@ -11,10 +11,10 @@
 
 ## Get in Touch
 - Website:  https://tarundevindia.web.app/
-- LinkedIn: https://www.linkedin.com/in/tarun-singh-c-61021a1b1/
+- LinkedIn: https://www.linkedin.com/in/tarunchauhan97/
 - Twitter:  https://twitter.com/chauhan_tarun97
 - Email:    chauhan.tarun897@gmail.com / chauhan.tarun897@hotmail.com
-- Resume:   https://firebasestorage.googleapis.com/v0/b/tarundevindia.appspot.com/o/tarun_mobile_btech_25_03.pdf?alt=media&token=399f832c-1561-497a-897b-73317d81cacb
+- Resume:   https://firebasestorage.googleapis.com/v0/b/tarundevindia.appspot.com/o/tarun_mobile_btech_06_05.pdf?alt=media&token=2ffd35dd-1cfc-4c36-9cf7-aea9b99440f9
 - Gaming App:- https://play.google.com/store/apps/details?id=com.gamevame.user.gamevame&hl=en_AU
 
 
