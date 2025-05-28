@@ -7,7 +7,7 @@ const kPhoneNumber = '+919306500147';
 const kProfileImageUrl =
     'https://firebasestorage.googleapis.com/v0/b/tarundevindia.appspot.com/o/mee.jpg?alt=media&token=6ceab770-0ed1-45bb-a1ae-755f985bb4aa';
 const kMyResumeDownloadUrl =
-    'https://firebasestorage.googleapis.com/v0/b/tarundevindia.appspot.com/o/tarun_mobile_btech_25_03.pdf?alt=media&token=399f832c-1561-497a-897b-73317d81cacb';
+    'https://firebasestorage.googleapis.com/v0/b/tarundevindia.appspot.com/o/tarun_btech_2005.pdf?alt=media&token=a01985ca-0363-4e35-969b-e33d8490f6a2';
 const kMyGithubUrl = 'https://github.com/tarunchauhan97';
 const kMyTelegramUrl = 'https://telegram.me/a35';
 const kMyInstagramUrl = 'https://www.instagram.com/chauhan.tarun897/';
