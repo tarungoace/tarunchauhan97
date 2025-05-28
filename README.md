@@ -16,7 +16,7 @@
 - LinkedIn: https://www.linkedin.com/in/tarunchauhan97/
 - Twitter:  https://twitter.com/chauhan_tarun97
 - Email:    chauhan.tarun897@gmail.com / chauhan.tarun897@hotmail.com
-- Resume:   https://firebasestorage.googleapis.com/v0/b/tarundevindia.appspot.com/o/tarun_mobile_btech_06_05.pdf?alt=media&token=2ffd35dd-1cfc-4c36-9cf7-aea9b99440f9
+- Resume:   https://firebasestorage.googleapis.com/v0/b/tarundevindia.appspot.com/o/tarun_btech_2005.pdf?alt=media&token=a01985ca-0363-4e35-969b-e33d8490f6a2
 - Gaming App:- https://play.google.com/store/apps/details?id=com.gamevame.user.gamevame&hl=en_AU
 
 
