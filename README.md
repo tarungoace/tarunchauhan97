@@ -11,7 +11,6 @@
 
 
 
-
 ## Get in Touch
 - Website:  https://tarundevindia.web.app/
 - LinkedIn: https://www.linkedin.com/in/tarunchauhan97/
