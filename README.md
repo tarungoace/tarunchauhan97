@@ -9,7 +9,6 @@
 ⦿ 🔭 I am Mobile App Developer with Skills in **FLUTTER FRAMEWORK**<br><br> ⦿ 🌱 I’m currently learning **backend** Nodejs<br><br> ⦿ 💬 Ask me about **Flutter, Dart, Swift, Kotlin**<br><br> ⦿ 📫 How to reach me **chauhan.tarun897@gmail.com**<br><br> ⦿ 📫 How to reach me **chauhan.tarun897@hotmail.com**<br><br> ***Contact me/ Whatsapp Me: - +91 9306500147 ***<br><br><br><br><br><br><br>
 
 
-
 ## Get in Touch
 - Website:  https://tarundevindia.web.app/
 - LinkedIn: https://www.linkedin.com/in/tarunchauhan97/
