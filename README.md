@@ -6,7 +6,7 @@
 
 # 💫 About Me:
 <img align="right" alt="Coding" width="400" src="https://github.com/tarunchauhan97/tarunchauhan97/assets/30916033/4abd9f8c-167e-4529-8f13-237e5d6553c7">
-⦿ 🔭 I am Mobile App Developer with Skills in **FLUTTER FRAMEWORK**<br><br> ⦿ 🌱 I’m currently learning **backend** Nodejs<br><br> ⦿ 💬 Ask me about **Flutter, Dart, Swift, Kotlin**<br><br> ⦿ 📫 How to reach me **chauhan.tarun897@gmail.com**<br><br> ⦿ 📫 How to reach me **chauhan.tarun897@hotmail.com**<br><br> ***Contact me/ Whatsapp Me: - +91 9306500147 ***<br><br><br><br><br><br><br>
+⦿ 🔭 I am Mobile App Developer with Skills in **FLUTTER FRAMEWORK**<br><br> ⦿ 🌱 I’m currently learning **backend** Nodejs<br><br> ⦿ 💬 Ask me about **Flutter, Dart, Swift, Kotlin**<br><br> ⦿ 📫 How to reach me **chauhan.tarun897@gmail.com**<br><br> ⦿ 📫 How to reach me **chauhan.tarun897@hotmail.com**<br><br> ***Contact me/ Whatsapp Me: - 9518840197 / +91 9306500147 ***<br><br><br><br><br><br><br>
 
 
 
@@ -14,7 +14,7 @@
 - Website:  https://tarundevindia.web.app/
 - LinkedIn: https://www.linkedin.com/in/tarunchauhan97/
 - Twitter:  https://twitter.com/chauhan_tarun97
-- Email:    chauhan.tarun897@gmail.com / chauhan.tarun897@hotmail.com
+- Email:    tarun.goace@gmail.com / chauhan.tarun897@gmail.com / chauhan.tarun897@hotmail.com
 - Resume:   https://firebasestorage.googleapis.com/v0/b/tarundevindia.appspot.com/o/tarun_btech_2005.pdf?alt=media&token=a01985ca-0363-4e35-969b-e33d8490f6a2
 - Gaming App:- https://play.google.com/store/apps/details?id=com.gamevame.user.gamevame&hl=en_AU
 
